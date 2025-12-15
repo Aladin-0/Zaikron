@@ -49,3 +49,60 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.05);
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+/* --- LIQUID AURORA ANIMATION --- */
+@keyframes aurora {
+  0% { background-position: 50% 50%, 50% 50%; }
+  100% { background-position: 350% 50%, 350% 50%; }
+}
+
+.animate-aurora {
+  background-image: 
+    linear-gradient(80deg, #050508 30%, transparent 80%),
+    conic-gradient(from 180deg at 50% 50%, #7000ff 0deg, #00f3ff 140deg, #ff0099 260deg, #7000ff 360deg);
+  background-size: 200% 200%;
+  animation: aurora 20s linear infinite;
+  filter: blur(80px);
+  opacity: 0.6;
+}
+
+/* --- HOLOGRAPHIC BORDER ROTATION --- */
+@keyframes border-rotate {
+  from { --angle: 0deg; }
+  to { --angle: 360deg; }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.holographic-border {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.holographic-border::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  background: conic-gradient(from var(--angle), transparent 20%, #00f3ff, #7000ff, #ff0099, transparent 80%);
+  border-radius: inherit;
+  animation: border-rotate 4s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.holographic-border:hover::after {
+  opacity: 1;
+}
