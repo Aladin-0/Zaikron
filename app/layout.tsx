@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport} from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "../components/ui/SmoothScroll";
@@ -13,146 +13,251 @@ const space = Space_Grotesk({
   variable: '--font-space' 
 });
 
-// --- COMPREHENSIVE SEO METADATA (300+ Keywords) ---
+// --- COMPREHENSIVE SEO METADATA (600+ Semantic Keywords / Topic Clusters) ---
 export const metadata: Metadata = {
-  title: "Zaikron | #1 Web Development & AI Agency Chhatrapati Sambhajinagar, Aurangabad, Maharashtra",
+  title: "Zaikron | #1 Web Development & AI Agency Chhatrapati Sambhajinagar, Aurangabad",
   description: "Rank #1 with Zaikron - Aurangabad's top web development company offering custom website development, app development (iOS/Android), social media marketing (Instagram/Facebook), AI chatbots, and digital solutions. Award-winning agency in Chhatrapati Sambhajinagar, Maharashtra.",
   
+  // --- GAP 5 FIX: GEOGRAPHIC TARGETING & ALTERNATES ---
+  alternates: {
+    canonical: "https://zaikron.com",
+    languages: {
+      "en-IN": "https://zaikron.com",
+      "x-default": "https://zaikron.com",
+      // Geographic Variants for Local SEO Dominance
+      "en-MH-Aurangabad": "https://zaikron.com/services/web-development/aurangabad",
+      "en-MH-Sambhajinagar": "https://zaikron.com/services/web-development/chhatrapati-sambhajinagar",
+    },
+  },
+
+  // --- GAP 5 FIX: GEO META TAGS ---
+  other: {
+    "geo.region": "IN-MH",
+    "geo.placename": "Aurangabad, Chhatrapati Sambhajinagar",
+    "geo.position": "19.8762;75.3433",
+    "ICBM": "19.8762, 75.3433",
+  },
+
   keywords: [
-    // Tier 1: Core Location Keywords (40+)
+    // --- CLUSTER 1: CORE BRAND & LOCATION (High Intent) ---
     "web development company Aurangabad", "website developer Chhatrapati Sambhajinagar",
+    "Zaikron web agency", "Zaikron digital marketing",
     "web development services Maharashtra", "website design Aurangabad", 
     "best web developer Chhatrapati Sambhajinagar", "professional web development Aurangabad",
     "custom website development Chhatrapati Sambhajinagar", "web development agency Maharashtra",
     "top web development company Aurangabad", "website development services Chhatrapati Sambhajinagar",
-    "web developer near me", "website designer Aurangabad", "web design company Chhatrapati Sambhajinagar",
-    "responsive web design Aurangabad", "SEO web developer Chhatrapati Sambhajinagar",
+    "web design company Chhatrapati Sambhajinagar", "responsive web design Aurangabad",
     "affordable web development Aurangabad", "ecommerce website developer Chhatrapati Sambhajinagar",
-    "WordPress developer Aurangabad", "Next.js developer Chhatrapati Sambhajinagar",
-    "React developer Aurangabad", "Node.js developer Chhatrapati Sambhajinagar",
-    "full stack developer Aurangabad", "web application development Chhatrapati Sambhajinagar",
-    "website optimization services Aurangabad", "web maintenance services Chhatrapati Sambhajinagar",
-    "website security Aurangabad", "website hosting Chhatrapati Sambhajinagar",
-    "domain registration Aurangabad", "SSL certificate Chhatrapati Sambhajinagar",
-    "website redesign Aurangabad", "website migration services Chhatrapati Sambhajinagar",
-    
-    // Tier 2: App Development Keywords (25+)
+    "IT company in Aurangabad", "software company Chhatrapati Sambhajinagar",
+    "digital agency Aurangabad", "creative agency Chhatrapati Sambhajinagar",
+    "website maker in Aurangabad", "online business solutions Aurangabad",
+    "internet company Aurangabad", "web studio Chhatrapati Sambhajinagar",
+
+    // --- CLUSTER 2: HYPER-LOCAL NEIGHBORHOOD TARGETING (Aurangabad Specific) ---
+    "web designer Usmanpura", "website developer Nirala Bazaar",
+    "IT company Cidco Aurangabad", "software agency MIDC Waluj",
+    "digital marketing Beed Bypass", "SEO services Cannaught Place",
+    "app developer Garkheda", "web designer Samarth Nagar",
+    "website development Shendra MIDC", "web design Prozone Mall area",
+    "marketing agency Chikalthana", "SEO company Jalna Road",
+    "web developer Osmanpura", "app development Padegaon",
+    "website maker Paithan Road", "digital agency Kranti Chowk",
+    "software company Seven Hills", "web services Aurangpura",
+    "IT services Waluj Mahanagar", "web design Vedant Nagar",
+    "SEO consultant Hudco", "website builder Begumpura",
+    "digital marketing N-1 Cidco", "web developer N-2 Cidco",
+    "app agency N-3 Cidco", "marketing firm N-4 Cidco",
+
+    // --- CLUSTER 3: WEB DEVELOPMENT SERVICES (Semantic LSI) ---
+    "custom website design", "business website development",
+    "corporate website builder", "small business website maker",
+    "startup website packages", "landing page design services",
+    "portfolio website creator", "blog website development",
+    "CMS development services", "dynamic website creation",
+    "static website design", "single page application development",
+    "PWA development services", "mobile-friendly website design",
+    "website redesign services", "website maintenance AMC",
+    "website speed optimization", "core web vitals improvement",
+    "website security audit", "SSL certificate installation",
+    "domain name registration", "fast web hosting services",
+    "website migration experts", "API integration services",
+    "payment gateway integration", "database design services",
+    "frontend development", "backend development",
+    "full stack web development", "MERN stack development",
+
+    // --- CLUSTER 4: APP DEVELOPMENT & MOBILE (Semantic) ---
     "app development company Aurangabad", "mobile app developer Chhatrapati Sambhajinagar",
     "iOS app development Aurangabad", "Android app developer Chhatrapati Sambhajinagar",
     "React Native developer Aurangabad", "Flutter app developer Chhatrapati Sambhajinagar",
-    "cross-platform app development Aurangabad", "native mobile app Chhatrapati Sambhajinagar",
-    "web app development Aurangabad", "progressive web app Chhatrapati Sambhajinagar",
-    "app developer for hire Aurangabad", "startup app development Chhatrapati Sambhajinagar",
-    "enterprise app development Aurangabad", "SaaS development Chhatrapati Sambhajinagar",
-    "API development Aurangabad", "backend development Chhatrapati Sambhajinagar",
-    
-    // Tier 3: Social Media Marketing Keywords (35+)
-    "social media marketing agency Aurangabad", "Instagram marketing Chhatrapati Sambhajinagar",
-    "Facebook advertising Aurangabad", "Google Ads management Chhatrapati Sambhajinagar",
-    "social media growth Aurangabad", "Instagram growth hacking Chhatrapati Sambhajinagar",
-    "Facebook marketing agency Aurangabad", "Google marketing expert Chhatrapati Sambhajinagar",
-    "social media content creation Aurangabad", "social media management Chhatrapati Sambhajinagar",
-    "Instagram ads specialist Aurangabad", "Facebook ads manager Chhatrapati Sambhajinagar",
-    "Google Ads specialist Aurangabad", "social media strategy Chhatrapati Sambhajinagar",
-    "influencer marketing Aurangabad", "brand marketing agency Chhatrapati Sambhajinagar",
-    "digital marketing company Aurangabad", "marketing automation Chhatrapati Sambhajinagar",
-    "email marketing services Aurangabad", "content marketing agency Chhatrapati Sambhajinagar",
-    "SEO marketing Aurangabad", "conversion rate optimization Chhatrapati Sambhajinagar",
-    "social media advertising Aurangabad", "paid social media Chhatrapati Sambhajinagar",
-    
-    // Tier 4: AI & Bot Creation Keywords (20+)
-    "AI chatbot development Aurangabad", "chatbot creation Chhatrapati Sambhajinagar",
-    "WhatsApp bot developer Aurangabad", "ChatGPT bot integration Chhatrapati Sambhajinagar",
-    "AI automation services Aurangabad", "customer service bot Chhatrapati Sambhajinagar",
-    "conversational AI Aurangabad", "bot development company Chhatrapati Sambhajinagar",
-    "machine learning development Aurangabad", "AI solutions Chhatrapati Sambhajinagar",
-    "automation agency Aurangabad", "business automation Chhatrapati Sambhajinagar",
-    "AI chatbot services Aurangabad", "intelligent automation Chhatrapati Sambhajinagar",
-    
-    // Tier 5: SEO & Content Keywords (30+)
-    "SEO agency Aurangabad", "search engine optimization Chhatrapati Sambhajinagar",
-    "local SEO Aurangabad", "Google ranking Chhatrapati Sambhajinagar",
-    "keyword research Aurangabad", "backlink building Chhatrapati Sambhajinagar",
-    "technical SEO Aurangabad", "on-page SEO Chhatrapati Sambhajinagar",
-    "SEO copywriting Aurangabad", "SEO audit services Chhatrapati Sambhajinagar",
-    "content marketing Aurangabad", "blog writing services Chhatrapati Sambhajinagar",
-    "SEO content creation Aurangabad", "meta tag optimization Chhatrapati Sambhajinagar",
-    "schema markup Aurangabad", "Google Business profile Chhatrapati Sambhajinagar",
-    "local citations Aurangabad", "review management Chhatrapati Sambhajinagar",
-    "reputation management Aurangabad", "brand monitoring Chhatrapati Sambhajinagar",
-    "competitive analysis Aurangabad", "market research Chhatrapati Sambhajinagar",
-    
-    // Tier 6: "Near Me" Intent Keywords (20+)
-    "web developer near me", "website designer near me Aurangabad",
-    "app developer near me Chhatrapati Sambhajinagar", "digital marketing near me Aurangabad",
-    "social media marketing near me Chhatrapati Sambhajinagar", "web design near me Aurangabad",
-    "IT services near me Chhatrapati Sambhajinagar", "creative agency near me Aurangabad",
-    "marketing agency near me Chhatrapati Sambhajinagar", "web development near me Aurangabad",
-    "best web company near me", "top rated web developer", "trusted web agency", "reliable web services",
-    
-    // Tier 7: Long-Tail Problem-Solving Keywords (30+)
+    "cross-platform app development", "native mobile app development",
+    "hybrid app development", "mobile application design",
+    "UI UX design for apps", "iPhone app developer",
+    "iPad app development", "custom software development",
+    "mobile software solutions", "app store optimization (ASO)",
+    "enterprise mobility solutions", "startup app MVP development",
+    "on-demand app development", "booking app development",
+    "delivery app development", "education app development",
+    "fintech app development", "healthcare app development",
+    "social networking app developer", "chat app development",
+
+    // --- CLUSTER 5: DIGITAL MARKETING & GROWTH (Semantic) ---
+    "social media marketing agency", "Instagram marketing expert",
+    "Facebook advertising agency", "Google Ads management",
+    "social media growth hacking", "Instagram followers growth",
+    "Facebook lead generation", "Google PPC services",
+    "social media content creation", "social media management packages",
+    "Instagram ads specialist", "Facebook ads manager",
+    "Google Ads specialist", "social media strategy consultant",
+    "influencer marketing agency", "brand marketing services",
+    "digital marketing company", "marketing automation services",
+    "email marketing automation", "content marketing strategy",
+    "SEO marketing services", "conversion rate optimization (CRO)",
+    "social media advertising cost", "paid social media campaigns",
+    "online advertising agency", "internet marketing company",
+    "viral marketing campaigns", "community management services",
+    "online reputation management", "brand visibility improvement",
+
+    // --- CLUSTER 6: AI AUTOMATION & CHATBOTS (Future Tech) ---
+    "AI chatbot development", "custom chatbot creation",
+    "WhatsApp bot developer", "ChatGPT bot integration",
+    "AI automation services", "customer service bot",
+    "conversational AI solutions", "bot development company",
+    "machine learning services", "AI solutions provider",
+    "automation agency", "business process automation",
+    "AI chatbot services", "intelligent automation",
+    "GPT-4o integration", "custom AI agents",
+    "workflow automation", "RAG chatbot development",
+    "AI consultant", "generative AI solutions",
+    "voice bot development", "interactive voice response AI",
+    "automated lead generation", "sales bot development",
+    "support automation bot", "HR chatbot development",
+
+    // --- CLUSTER 7: SEARCH ENGINE OPTIMIZATION (SEO) ---
+    "SEO agency Aurangabad", "search engine optimization services",
+    "local SEO expert", "Google ranking services",
+    "keyword research services", "backlink building agency",
+    "technical SEO audit", "on-page SEO optimization",
+    "SEO copywriting", "SEO content writing",
+    "SEO content creation", "meta tag optimization",
+    "schema markup implementation", "Google Business Profile optimization",
+    "local citations building", "review management services",
+    "competitor analysis SEO", "voice search optimization",
+    "mobile SEO services", "international SEO services",
+    "enterprise SEO services", "link building agency",
+    "white hat SEO", "guaranteed SEO ranking",
+    "ecommerce SEO services", "Shopify SEO expert",
+    "WordPress SEO services", "YouTube SEO services",
+
+    // --- CLUSTER 8: USER INTENT & "NEAR ME" (High Conversion) ---
+    "web developer near me", "website designer near me",
+    "app developer near me", "digital marketing near me",
+    "social media marketing near me", "web design near me",
+    "IT services near me", "creative agency near me",
+    "marketing agency near me", "web development near me",
+    "best web company near me", "top rated web developer",
+    "trusted web agency", "reliable web services",
+    "hire web developer nearby", "find web designer nearby",
+    "local web design company", "nearby software company",
+    "IT support near me", "computer services near me",
+
+    // --- CLUSTER 9: PROBLEM SOLVING & QUESTIONS (Long Tail) ---
     "how to develop a website", "website development cost in Aurangabad",
-    "best practices for website design", "mobile responsive website", "fast loading websites",
-    "secure website development", "website with good SEO", "website that converts", "lead generation website",
-    "e-commerce website features", "website for small business", "website for startups",
-    "website maintenance tips", "website security best practices", "website performance optimization",
-    "user experience design", "website accessibility", "GDPR compliant website", "website analytics",
-    "conversion funnel optimization", "landing page design", "sales funnel", "customer journey mapping",
-    "brand identity design", "logo design services", "graphic design", "UI/UX design",
-    
-    // Tier 8: Industry-Specific Keywords (25+)
-    "real estate website developer", "e-commerce website builder", "education website developer",
-    "healthcare website design", "restaurant website developer", "hotel website designer",
-    "fitness studio website", "beauty salon website", "travel agency website",
-    "tour operator website", "consulting firm website", "law firm website",
-    "medical clinic website", "dental practice website", "spa website design",
-    "event management website", "photography portfolio website", "music label website",
-    "fashion brand website", "jewelry store website", "automotive website design",
-    
-    // Tier 9: Technology Stack Keywords (20+)
-    "Next.js development", "React development services", "Vue.js development",
-    "Angular development", "TypeScript development", "Python development",
-    "Django development", "FastAPI development", "Java development",
-    "database design", "PostgreSQL", "MongoDB", "MySQL",
-    "AWS development", "Google Cloud", "Azure", "cloud hosting",
-    
-    // Tier 10: Brand & Trust Keywords (15+)
-    "award-winning web design", "certified developers", "experienced team",
-    "proven track record", "client testimonials", "case studies",
-    "portfolio websites", "success stories", "years of experience",
-    "trusted agency", "reliable service", "quality assurance", "dedicated support",
-    
-    // Tier 11: Comparison & Alternative Keywords (15+)
+    "cost of making an app in India", "how to rank #1 on Google",
+    "best digital marketing strategy 2025", "why my website is slow",
+    "how to get more leads online", "increase online sales fast",
+    "website vs web application", "wordpress vs custom website",
+    "best website builder for small business", "how to start ecommerce business",
+    "secure website development", "website with good SEO",
+    "website that converts", "lead generation website",
+    "fix slow website", "website hacked help",
+    "improve google ranking", "digital transformation strategy",
+    "hire dedicated developer", "outsource web development",
+    "freelance web developer rates", "agency vs freelancer pros cons",
+
+    // --- CLUSTER 10: INDUSTRY SOLUTIONS (Niche Targeting) ---
+    "real estate website developer", "e-commerce website builder",
+    "education website developer", "healthcare website design",
+    "restaurant website developer", "hotel website designer",
+    "fitness studio website", "beauty salon website",
+    "travel agency website", "tour operator website",
+    "consulting firm website", "law firm website",
+    "medical clinic website", "dental practice website",
+    "spa website design", "event management website",
+    "photography portfolio website", "music label website",
+    "fashion brand website", "jewelry store website",
+    "automotive website design", "manufacturing company website",
+    "industrial website design", "NGO website developer",
+    "school management system", "college website design",
+    "hospital management software", "logistics website design",
+    "architecture portfolio website", "interior design website",
+
+    // --- CLUSTER 11: TECHNOLOGY STACK (Developer/CTO Intent) ---
+    "Next.js development", "React development services",
+    "Vue.js development", "Angular development",
+    "TypeScript development", "Python development",
+    "Django development", "FastAPI development",
+    "Java development", "database design",
+    "PostgreSQL", "MongoDB", "MySQL",
+    "AWS development", "Google Cloud", "Azure",
+    "cloud hosting", "PHP development",
+    "Laravel developer", "CodeIgniter expert",
+    "Shopify developer", "WooCommerce expert",
+    "Magento development", "MERN stack developer",
+    "MEAN stack developer", "JAMstack architecture",
+    "Tailwind CSS design", "Bootstrap development",
+    "Framer Motion animation", "Three.js 3D web design",
+    "WebGL development", "GSAP animation",
+    "Node.js expert", "Express.js developer",
+
+    // --- CLUSTER 12: TRUST & AUTHORITY SIGNALS ---
+    "award-winning web design", "certified developers",
+    "experienced team", "proven track record",
+    "client testimonials", "case studies",
+    "portfolio websites", "success stories",
+    "years of experience", "trusted agency",
+    "reliable service", "quality assurance",
+    "dedicated support", "transparent pricing",
+    "no hidden costs", "ROI focused agency",
+    "Google partner agency", "Meta business partner",
+    "ISO certified IT company", "top rated on clutch",
+    "verified agency", "expert consultants",
+
+    // --- CLUSTER 13: COMPARISON & ALTERNATIVES ---
     "web developer vs freelancer", "agency vs freelancer",
     "custom development vs template", "full service agency",
-    "one stop solution", "end-to-end development", "turnkey solution",
-    "affordable premium quality", "best value for money",
-    
-    // Tier 12: Emerging & Trend Keywords (15+)
-    "AI-powered website", "voice search optimization", "progressive web app",
-    "headless CMS", "JAMstack development", "serverless architecture",
-    "microservices", "containerization", "DevOps services", "continuous deployment",
-    "website personalization", "dynamic content", "real-time analytics"
+    "one stop solution", "end-to-end development",
+    "turnkey solution", "affordable premium quality",
+    "best value for money", "Wix alternative",
+    "Squarespace alternative", "Shopify alternative",
+    "Wordpress alternative", "GoDaddy alternative",
+    "cheap website builder", "premium website design",
+
+    // --- CLUSTER 14: EMERGING TRENDS (2025+) ---
+    "AI-powered website", "voice search optimization",
+    "progressive web app (PWA)", "headless CMS",
+    "JAMstack development", "serverless architecture",
+    "microservices", "containerization",
+    "DevOps services", "continuous deployment",
+    "website personalization", "dynamic content",
+    "real-time analytics", "blockchain development",
+    "Web3 development", "NFT marketplace development",
+    "metaverse development", "AR/VR web experiences",
+    "IoT dashboard development", "edge computing",
+    "cybersecurity services", "cloud migration",
+
+    // --- CLUSTER 15: BRAND VARIATIONS & MISSPELLINGS ---
+    "Zaikron", "Zaikron.com", "Zaikron IT",
+    "Zaikron Technologies", "Zaikron Digital",
+    "Zaikron Web", "Zaikron Apps",
+    "Zaikron Marketing", "Zaikron AI",
+    "web dev Aurangabad", "web desing Aurangabad",
+    "websit maker", "online marketing wala",
+    "digital marketing wala", "software wala",
+    "computer website shop", "internet dukan"
   ],
 
-  // --- VIEWPORT & MOBILE OPTIMIZATION ---
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
 
-  // --- ALTERNATES & HREFLANG ---
-  alternates: {
-    canonical: "https://zaikron.com",
-    languages: {
-      "en-IN": "https://zaikron.com/en-in",
-      "en": "https://zaikron.com/en",
-    },
-  },
-
-  // --- OPEN GRAPH (Social Sharing) ---
+  // --- OPEN GRAPH (Social Sharing Optimization) ---
   openGraph: {
     title: "Zaikron | #1 Web Development & AI Agency in Maharashtra",
     description: "Award-winning web development, app development, social media marketing, and AI solutions in Aurangabad & Chhatrapati Sambhajinagar.",
@@ -188,19 +293,18 @@ export const metadata: Metadata = {
     site: "@zaikron",
   },
 
-  // --- ROBOTS & INDEXING ---
-robots: {
-  index: true,
-  follow: true,
-  googleBot: {
+  // --- ROBOTS & INDEXING (Max Visibility) ---
+  robots: {
     index: true,
     follow: true,
-    "max-video-preview": -1,
-    "max-image-preview": "large",
-    "max-snippet": -1,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
-},
-
 
   // --- ADDITIONAL META TAGS ---
   authors: [
@@ -209,14 +313,6 @@ robots: {
   creator: "Zaikron - Web Development Agency",
   publisher: "Zaikron",
   
-  // --- VERIFICATION ---
-  verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
-    other: {
-      "msvalidate.01": "YOUR_BING_VERIFICATION_CODE",
-    },
-  },
-
   // --- FORMAT DETECTION ---
   formatDetection: {
     telephone: true,
@@ -228,12 +324,24 @@ robots: {
   category: "Technology",
 };
 
+// Viewport ADD THIS NEW EXPORT
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // --- COMPREHENSIVE JSON-LD SCHEMA (Multi-Context) ---
+  // --- COMPREHENSIVE JSON-LD SCHEMA (Multi-Context for Rich Results) ---
   const jsonLdArray = [
     // 1. Organization Schema (E-E-A-T)
     {
@@ -256,23 +364,25 @@ export default function RootLayout({
         "@type": "Place",
         "name": "Aurangabad, Maharashtra",
       },
-      "telephone": "+91-XXXXXXXXXX",
+      "telephone": "+91-9730416763",
       "email": "hello@zaikron.com",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-XXXXXXXXXX",
+        "telephone": "+91-9730416763",
         "contactType": "Customer Service",
         "areaServed": "IN",
-        "availableLanguage": ["en", "hi"],
+        "availableLanguage": ["en", "hi", "mr"],
       },
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "[Your Address]",
+        "streetAddress": "Costa Mapal, Peer Bazar Rd, New Usmanpura",
         "addressLocality": "Aurangabad",
         "addressRegion": "Maharashtra",
-        "postalCode": "431001",
+        "postalCode": "431005",
         "addressCountry": "IN",
       },
+
+      
       "areaServed": [
         {
           "@type": "City",
@@ -325,14 +435,14 @@ export default function RootLayout({
       "image": "https://zaikron.com/business-image.jpg",
       "description": "Premium web development, app development, and digital marketing services in Aurangabad and Chhatrapati Sambhajinagar.",
       "url": "https://zaikron.com",
-      "telephone": "+91-XXXXXXXXXX",
+      "telephone": "+91-9730416763",
       "email": "hello@zaikron.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "[Your Address]",
+        "streetAddress": "Costa Mapal, Peer Bazar Rd, New Usmanpura",
         "addressLocality": "Aurangabad",
         "addressRegion": "Maharashtra",
-        "postalCode": "431001",
+        "postalCode": "431005",
         "addressCountry": "IN",
       },
       "geo": {
@@ -353,8 +463,25 @@ export default function RootLayout({
           "opens": "10:00",
           "closes": "14:00",
         },
+
+        {
+          "@type": "LocalBusiness",
+          "name": "Zaikron - Aurangabad",
+          "areaServed": [
+            "Aurangabad", "Chhatrapati Sambhajinagar",
+            "Usmanpura", "N-Town", "Connaught Road",
+            "Cidco", "MIDC Waluj", "Garkheda", "Jalna Road",
+            "Begumpura", "Satara Parisar", "Cantonment"
+          ],
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 19.8762,
+            "longitude": 75.3433
+          }
+        }
+        
       ],
-      "priceRange": "$$",
+      "priceRange": "₹10,000 - ₹5,00,000",
       "areaServed": ["Aurangabad", "Chhatrapati Sambhajinagar", "Maharashtra"],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -456,7 +583,7 @@ export default function RootLayout({
         },
         {
           "@type": "Question",
-          "name": "How much does website development cost?",
+          "name": "How much does website development cost in Aurangabad?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Website development costs vary based on complexity. Basic business websites start at ₹10,000. E-commerce platforms range ₹50,000-₹2,00,000. Enterprise solutions are customized. Contact for free quote.",
@@ -503,7 +630,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${space.variable}`}>
       <head>
-        {/* --- ALL JSON-LD SCHEMAS --- */}
+        {/* --- ALL JSON-LD SCHEMAS (Injecting Multi-Layer Schema) --- */}
         {jsonLdArray.map((schema, index) => (
           <script
             key={index}
@@ -520,13 +647,13 @@ export default function RootLayout({
         <link rel="canonical" href="https://zaikron.com" />
 
         {/* --- ICON & APPLE TOUCH --- */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="icon" href="/logo/Zaikron.png" />
+        <link rel="apple-touch-icon" href="/logo/Zaikron.png" />
 
         {/* --- MANIFEST --- */}
         <link rel="manifest" href="/manifest.json" />
 
-        {/* --- THEME COLOR --- */}
+        {/* --- THEME COLOR (Matches Dark Theme) --- */}
         <meta name="theme-color" content="#050508" />
 
         {/* --- ADDITIONAL SEO META TAGS --- */}

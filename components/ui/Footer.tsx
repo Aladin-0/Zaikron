@@ -1,13 +1,14 @@
 'use client';
 
 import { MapPin, Phone, Mail, Instagram, ArrowUpRight, Copy, Check, MessageCircle } from 'lucide-react';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-[#050508] pt-4 pb-4 md:pt-20 md:pb-8 border-t border-white/10 overflow-hidden">
+    <footer className="relative bg-[#050508] pt-4 pb-24 md:pt-20 md:pb-8 border-t border-white/10 overflow-hidden">
       
       {/* Background Ambience */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom,rgba(112,0,255,0.05),transparent_50%)] pointer-events-none"></div>
@@ -15,20 +16,39 @@ export default function Footer() {
       <div className="container mx-auto px-1 md:px-6 max-w-[90rem] relative z-10">
         
         {/* --- THE MAIN CONTROL GRID --- */}
-        {/* Mobile: grid-cols-12 (Micro Horizontal) | Desktop: grid-cols-12 (Standard) */}
         <div className="grid grid-cols-12 gap-1 md:gap-6">
           
-          {/* COLUMN 1: BRAND & LOCATION (Mobile: Col-5 | Desktop: Col-5) */}
+          {/* COLUMN 1: BRAND & LOCATION */}
           <div className="col-span-5 lg:col-span-5 flex flex-col gap-1 md:gap-6">
             
-            {/* Brand Block */}
+            {/* Brand Block WITH LOGO */}
             <div className="group relative p-3 md:p-12 rounded-lg md:rounded-3xl bg-white/5 border-t border-l border-white/10 shadow-2xl overflow-hidden hover:bg-white/[0.07] transition-colors">
-              <h2 className="text-2xl md:text-8xl font-display font-bold text-white tracking-tighter mb-2 md:mb-4">
-              ZAIKRON
-              </h2>
+                
+              {/* Flex Container for Logo + Text */}
+              <div className="flex items-center gap-3 md:gap-8 mb-2 md:mb-4">
+                
+                {/* --- NEW: DYNAMIC ISLAND STYLE LOGO CONTAINER --- */}
+                <div className="relative shrink-0 flex items-center justify-center bg-white/5 border border-white/10 backdrop-blur-md shadow-[0_0_20px_rgba(0,255,255,0.15)] rounded-xl w-12 h-12 p-0 md:rounded-3xl md:w-24 md:h-24 md:p-1 group-hover:border-neon-cyan/30 transition-all duration-500">
+                  {/* Inner Image */}
+                  <div className="relative w-full h-full">
+                    <Image 
+                      src="/logo/Zaikron.png" 
+                      alt="Zaikron Logo" 
+                      fill
+                      className="object-contain drop-shadow-[0_0_10px_rgba(0,255,255,0.5)]"
+                    />
+                  </div>
+                </div>
+
+                {/* The Text */}
+                <h2 className="text-2xl md:text-7xl lg:text-8xl font-display font-bold text-white tracking-tighter">
+                  ZAIKRON
+                </h2>
+              </div>
+
               <p className="text-[6px] md:text-base font-mono text-gray-400 uppercase tracking-widest flex items-center gap-1 md:gap-2 whitespace-nowrap">
-              <span className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-green-500 animate-pulse"></span>
-              | Chhatrapati Sambhajinagar
+                <span className="w-1.5 h-1.5 md:w-2.5 md:h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+                | Chhatrapati Sambhajinagar
               </p>
               
               {/* Decorative Blur */}
@@ -41,7 +61,6 @@ export default function Footer() {
                 <MapPin className="text-neon-cyan w-3 h-3 md:w-6 md:h-6 mt-0.5 md:mt-1 shrink-0" />
                 <div>
                   <span className="text-[5px] md:text-xs font-bold text-gray-500 uppercase tracking-wider mb-0.5 md:mb-2 block">Headquarters</span>
-                  {/* Micro Text for Mobile - Full Visibility */}
                   <address className="text-gray-300 not-italic text-[9px] md:text-sm leading-tight md:leading-relaxed font-light">
                     Costa Mapal, Peer Bazar Rd,<br/>
                     New Usmanpura, <br/>
@@ -62,7 +81,7 @@ export default function Footer() {
 
           </div>
 
-          {/* COLUMN 2: COMMUNICATION ARRAY (Mobile: Col-4 | Desktop: Col-4) */}
+          {/* COLUMN 2: COMMUNICATION ARRAY */}
           <div className="col-span-4 lg:col-span-4 flex flex-col gap-1 md:gap-6">
             
             {/* Primary Phone */}
@@ -98,12 +117,12 @@ export default function Footer() {
               </div>
             </a>
 
-            {/* Email Module - Wraps text on mobile */}
+            {/* Email Module */}
             <CopyModule label="Email Uplink" value="hello@zaikron.com" icon={<Mail size={20} />} />
 
           </div>
 
-          {/* COLUMN 3: NAVIGATION & SOCIALS (Mobile: Col-3 | Desktop: Col-3) */}
+          {/* COLUMN 3: NAVIGATION & SOCIALS */}
           <div className="col-span-3 lg:col-span-3 flex flex-col gap-1 md:gap-6">
             
             {/* Directory */}
@@ -164,6 +183,9 @@ export default function Footer() {
           <p className="text-[5px] md:text-[10px] font-mono text-gray-600 uppercase tracking-widest text-center md:text-left">
             © {currentYear} Zaikron Technologies. All Rights Reserved.
           </p>
+          <a href="/sitemap.xml" className="text-[10px] text-gray-600 hover:text-white uppercase tracking-widest">
+            Sitemap
+          </a>
         </div>
 
       </div>
@@ -192,7 +214,6 @@ function CopyModule({ label, value, icon }: any) {
         </div>
         <div>
           <span className="text-[5px] md:text-xs font-mono text-gray-500 uppercase block md:mb-1">{label}</span>
-          {/* MICRO STYLE: break-all ensures hello@zaikron.com fits in narrow col */}
           <span className="text-[6px] md:text-xl font-bold text-white group-hover:text-neon-pink transition-colors break-all">{value}</span>
         </div>
       </div>

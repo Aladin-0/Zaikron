@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import AboutContent from '../../components/ui/AboutContent';
+import AboutContent from '../../../components/ui/AboutContent';
 
 // --- 1. SEO METADATA (Algorithm-Cracking) ---
 export const metadata: Metadata = {

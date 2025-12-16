@@ -129,20 +129,7 @@ export default function AboutStory() {
         </div>
 
         {/* --- 4. THE CALL TO DOMINANCE --- */}
-        {/* TIGHTER MOBILE SPACING: py-10 instead of py-20 */}
-        <div className="text-center relative py-10 md:py-20 border-t border-white/5">
-          {/* Mobile: text-4xl mb-4 | Desktop: text-7xl mb-8 (Original) */}
-          <h2 className="text-4xl md:text-7xl font-display font-bold text-white mb-4 md:mb-8">
-            READY TO <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-purple to-neon-pink">SCALE?</span>
-          </h2>
-          {/* Mobile: text-lg mb-6 | Desktop: text-xl mb-10 (Original) */}
-          <p className="text-lg md:text-xl text-gray-400 mb-6 md:mb-10 max-w-2xl mx-auto">
-            Join the top brands in Maharashtra. Work with the best <strong className="text-white"> web development company Aurangabad</strong>.
-          </p>
-          <Link href="/contact" className="inline-flex items-center gap-3 px-12 py-5 bg-white text-black font-bold text-lg uppercase tracking-widest rounded-full hover:scale-105 transition-transform">
-            Start Your Project <ArrowRight size={20} />
-          </Link>
-        </div>
+       
 
       </div>
     </section>

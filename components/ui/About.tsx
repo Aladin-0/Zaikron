@@ -100,7 +100,7 @@ export default function AboutContent() {
           {/* Animated Header */}
           <div className="flex flex-col items-center">
             <AnimatedHeading 
-              text="WE ARE ZAIKRON." 
+              text="ZAIKRON." 
               className="text-6xl md:text-9xl font-display font-bold text-white tracking-tighter leading-[0.9] mb-4 drop-shadow-[0_0_25px_rgba(225,29,72,0.5)]" 
             />
             <motion.h2 

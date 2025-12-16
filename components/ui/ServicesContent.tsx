@@ -1,12 +1,13 @@
 'use client';
 
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef, ReactNode } from 'react';
+import { useRef, ReactNode, useState } from 'react';
 import Link from 'next/link';
 import { 
   ArrowUpRight, Sparkles, Code2, Smartphone, 
   BarChart3, Zap, CheckCircle, TrendingUp, 
-  Globe, ShieldCheck, Cpu, Search, Layers, Rocket, Users 
+  Globe, ShieldCheck, Cpu, Search, Layers, Rocket, Users,
+  Monitor, PenTool, Database, Server, ChevronDown
 } from 'lucide-react';
 
 export default function ServicesContent() {
@@ -21,52 +22,52 @@ export default function ServicesContent() {
   return (
     <section ref={containerRef} className="relative bg-[#050508] overflow-hidden min-h-screen pt-24 pb-12 md:pt-32 md:pb-20">
       
-      {/* BACKGROUND - SCALED DOWN FOR MOBILE */}
+      {/* BACKGROUND - UPDATED TO ORANGE/BLACK THEME */}
       <div className="absolute inset-0 pointer-events-none">
+        {/* Main Gradient Overlay for Orange/Black feel */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-900/20 via-[#050508] to-[#050508] z-0"></div>
+
         <motion.div 
           style={{ y: yBackground }} 
-          className="absolute top-[-5%] left-[-20%] w-[300px] h-[300px] md:top-[-10%] md:left-[-10%] md:w-[1000px] md:h-[1000px] bg-neon-purple/20 rounded-full blur-[60px] md:blur-[120px] mix-blend-screen opacity-40 animate-pulse"
+          className="absolute top-[-5%] left-[-20%] w-[300px] h-[300px] md:top-[-10%] md:left-[-10%] md:w-[1000px] md:h-[1000px] bg-orange-600/20 rounded-full blur-[60px] md:blur-[120px] mix-blend-screen opacity-40 animate-pulse"
         />
         <motion.div 
           style={{ y: yBackground }} 
-          className="absolute bottom-[-5%] right-[-20%] w-[250px] h-[250px] md:bottom-[-10%] md:right-[-10%] md:w-[800px] md:h-[800px] bg-neon-cyan/20 rounded-full blur-[60px] md:blur-[120px] mix-blend-screen opacity-40 animate-pulse"
+          className="absolute bottom-[-5%] right-[-20%] w-[250px] h-[250px] md:bottom-[-10%] md:right-[-10%] md:w-[800px] md:h-[800px] bg-red-600/20 rounded-full blur-[60px] md:blur-[120px] mix-blend-screen opacity-40 animate-pulse"
         />
         <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-8 max-w-[95rem] relative z-10">
         
-        {/* HERO SECTION - RESTRUCTURED FOR MOBILE */}
+        {/* HERO SECTION - UPDATED COLORS & GRADIENTS */}
         <div className="mb-20 md:mb-40 text-center relative">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 md:gap-3 px-4 py-1.5 md:px-6 md:py-2 rounded-full border border-white/10 bg-black/40 backdrop-blur-md mb-6 md:mb-8"
+            className="inline-flex items-center gap-2 md:gap-3 px-4 py-1.5 md:px-6 md:py-2 rounded-full border border-orange-500/30 bg-orange-900/10 backdrop-blur-md mb-6 md:mb-8"
           >
-            <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-neon-cyan animate-pulse"></span>
-            <span className="text-[10px] md:text-xs font-mono text-neon-cyan tracking-[0.2em] md:tracking-[0.3em] uppercase">
+            <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-orange-500 animate-pulse"></span>
+            <span className="text-[10px] md:text-xs font-mono text-orange-400 tracking-[0.2em] md:tracking-[0.3em] uppercase">
               #1 Agency • Aurangabad
             </span>
           </motion.div>
 
-          {/* H1 TAG - FIXED MOBILE SIZING */}
-          <h1 className="text-4xl sm:text-5xl md:text-9xl font-display font-bold text-white leading-[1.1] md:leading-[0.9] tracking-tighter mb-6 md:mb-8">
+          {/* H1 TAG - ADDED GRADIENT TEXT */}
+          <h1 className="text-4xl sm:text-5xl md:text-9xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-orange-100 to-orange-500 leading-[1.1] md:leading-[0.9] tracking-tighter mb-6 md:mb-8">
             Web Development Services Aurangabad <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan via-white to-neon-purple drop-shadow-[0_0_30px_rgba(112,0,255,0.5)]">
-              Complete Digital Solutions
-            </span>
           </h1>
 
           <div className="max-w-4xl mx-auto px-1 md:px-0">
             <p className="text-lg md:text-2xl text-gray-200 font-light leading-relaxed mb-6 md:mb-8">
-              Zaikron is Aurangabad's <strong className="text-white">leading web development company</strong>, delivering award-winning website development, app development, social media marketing, and AI automation solutions.
+              Zaikron is Aurangabad's <strong className="text-orange-400 font-medium">leading web development company</strong>, delivering award-winning website development, app development, social media marketing, and AI automation solutions.
             </p>
             <p className="text-base md:text-lg text-gray-400 leading-relaxed mb-8 md:mb-12">
-              Whether you're searching for the <strong className="text-white">best website developer in Chhatrapati Sambhajinagar</strong>, a <strong className="text-white">social media marketing agency near me</strong>, or a <strong className="text-white">custom app development partner</strong>, we provide comprehensive digital transformation services for businesses across Maharashtra and India.
+              Whether you're searching for the <strong className="text-white">best website developer in Chhatrapati Sambhajinagar</strong>, a <strong className="text-white">social media marketing agency near me</strong>, or a <strong className="text-white">custom app development partner</strong>, we provide comprehensive digital transformation services for businesses across Maharashtra and India. We specialize in creating <strong className="text-orange-400">custom website designs for Aurangabad startups</strong> and established enterprises alike.
             </p>
 
-            {/* PRIMARY CTA - STACKED ON MOBILE */}
+            {/* PRIMARY CTA - UPDATED GRADIENT BUTTON */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +77,7 @@ export default function ServicesContent() {
             >
               <Link 
                 href="/contact" 
-                className="group relative w-full md:w-auto px-8 md:px-12 py-4 md:py-5 bg-gradient-to-r from-neon-cyan to-neon-purple text-white font-bold text-base md:text-lg rounded-full overflow-hidden hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(112,0,255,0.4)] flex justify-center"
+                className="group relative w-full md:w-auto px-8 md:px-12 py-4 md:py-5 bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold text-base md:text-lg rounded-full overflow-hidden hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(234,88,12,0.4)] flex justify-center"
               >
                 <span className="relative z-10 flex items-center gap-3">
                   Start Your Project - From ₹10,000 <ArrowUpRight size={20} className="group-hover:rotate-45 transition-transform" />
@@ -91,7 +92,7 @@ export default function ServicesContent() {
             </motion.div>
 
             <p className="text-xs md:text-sm text-gray-500 px-4">
-              <strong className="text-neon-cyan">Located in Usmanpura, Aurangabad, Maharashtra 431005</strong> • Serving Chhatrapati Sambhajinagar & Beyond
+              <strong className="text-orange-500">Located in Usmanpura, Aurangabad, Maharashtra 431005</strong> • Serving Chhatrapati Sambhajinagar & Beyond
             </p>
           </div>
         </div>
@@ -107,6 +108,8 @@ export default function ServicesContent() {
           description={
             <>
               Zaikron specializes in <strong className="text-white">custom website development in Aurangabad</strong>, building SEO-optimized, high-performance websites that rank on Google and convert visitors into customers. Whether you need a <strong className="text-white">website developer in Chhatrapati Sambhajinagar</strong>, an <strong className="text-white">ecommerce platform</strong>, or a <strong className="text-white">responsive business website</strong>, we deliver pixel-perfect solutions using modern frameworks like Next.js, React, and Node.js.
+              <br/><br/>
+              Our services include <strong className="text-white">corporate website design</strong>, <strong className="text-white">landing page creation</strong>, and <strong className="text-white">portfolio website development</strong> for professionals. We understand the local market in Aurangabad and create websites that resonate with your target audience in Usmanpura, CIDCO, Waluj, and beyond.
             </>
           }
           visual={
@@ -130,8 +133,53 @@ export default function ServicesContent() {
           }
           footerText="Website development packages start at ₹10,000 for small business sites. Custom enterprise solutions from ₹1,00,00+."
           ctaLink="/services/web-development"
-          ctaText="Explore Web Development →"
+          ctaText="Explore Web Development "
         />
+
+        {/* --- NEW SECTION: AGENCY VS FREELANCER COMPARISON (LSI Targeting) --- */}
+        <div className="mb-24 md:mb-40 grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+          <div className="order-2 md:order-1">
+            <div className="p-6 md:p-8 rounded-3xl bg-white/5 border border-white/10">
+              <h3 className="text-2xl md:text-3xl font-bold text-white mb-6">Agency vs Freelancer: Why Aurangabad Businesses Choose Zaikron</h3>
+              <p className="text-gray-300 mb-6 leading-relaxed">
+                When searching for a <Link href="/website-development-company-in-aurangabad" className="text-orange-400 hover:text-white hover:underline transition-colors font-bold" title="Best Website Development Company in Aurangabad">website developer in Aurangabad</Link>, you might consider freelancers to save costs. However, Zaikron offers the reliability of a full agency at competitive rates. Unlike freelancers who may disappear or lack broad skills, our dedicated team ensures your <strong className="text-white">business website development</strong> is handled professionally from design to deployment.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="text-green-400 mt-1 shrink-0" size={20}/>
+                  <div>
+                    <h4 className="text-white font-bold">Reliability & Support</h4>
+                    <p className="text-sm text-gray-400">Guaranteed delivery timelines and post-launch AMC support.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="text-green-400 mt-1 shrink-0" size={20}/>
+                  <div>
+                    <h4 className="text-white font-bold">Full-Stack Expertise</h4>
+                    <p className="text-sm text-gray-400">Access to designers, developers, and SEO experts under one roof.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="text-green-400 mt-1 shrink-0" size={20}/>
+                  <div>
+                    <h4 className="text-white font-bold">Scalability</h4>
+                    <p className="text-sm text-gray-400">We build systems that grow with your business, not just static pages.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="order-1 md:order-2 text-center md:text-left">
+            <span className="text-neon-cyan font-mono text-sm uppercase tracking-widest mb-2 block">Strategic Comparison</span>
+            <h3 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">Make the <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-cyan to-white">Right Choice</span></h3>
+            <p className="text-gray-400 text-lg mb-8">
+              Investing in a <strong className="text-white">professional web development company</strong> ensures your digital asset is an asset, not a liability. Don't risk your brand reputation with amateur <strong className="text-white">web design services</strong>.
+            </p>
+            <Link href="/contact" className="inline-flex items-center gap-2 text-neon-cyan font-bold hover:text-white transition-colors border-b border-neon-cyan hover:border-white pb-1">
+              Consult Our Experts <ArrowUpRight size={18}/>
+            </Link>
+          </div>
+        </div>
 
         {/* SERVICE 2: APP DEVELOPMENT */}
         <ServiceLayout
@@ -143,7 +191,7 @@ export default function ServicesContent() {
           side="left"
           description={
             <>
-              Our <strong className="text-white">app development company in Aurangabad</strong> builds iOS, Android, and cross-platform applications using React Native, Flutter, and Native technologies. Whether you need a <strong className="text-white">mobile app developer in Chhatrapati Sambhajinagar</strong> or a full-stack <strong className="text-white">web app platform</strong>, we deliver scalable, user-centric solutions.
+              Our <strong className="text-white">app development company in Aurangabad</strong> builds iOS, Android, and cross-platform applications using React Native, Flutter, and Native technologies. Whether you need a <strong className="text-white">mobile app developer in Chhatrapati Sambhajinagar</strong> or a full-stack <strong className="text-white">web app platform</strong>, we deliver scalable, user-centric solutions. We specialize in <strong className="text-white">hybrid app development</strong> and <strong className="text-white">enterprise mobility solutions</strong>.
             </>
           }
           visual={
@@ -168,8 +216,55 @@ export default function ServicesContent() {
           }
           footerText="App development cost in Aurangabad starts at ₹50,000 for MVP. Enterprise platforms from ₹1,00,00+."
           ctaLink="/services/app-development"
-          ctaText="Explore App Development →"
+          ctaText="Explore App Development "
         />
+
+        {/* --- NEW SECTION: NEXT.JS VS WORDPRESS (Tech Comparison) --- */}
+        <div className="mb-24 md:mb-40 p-6 md:p-12 rounded-[2.5rem] bg-[#0a0a0f] border border-white/10 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-neon-purple/10 rounded-full blur-[100px]"></div>
+          <div className="relative z-10">
+            <div className="text-center mb-12">
+              <span className="text-neon-purple font-mono text-sm uppercase tracking-widest mb-3 block">Technology Selection</span>
+              <h3 className="text-3xl md:text-5xl font-display font-bold text-white mb-6">Next.js vs WordPress: Which Should You Choose?</h3>
+              <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+                Choosing the right technology is crucial for your <strong className="text-white">business website development</strong>. While WordPress is popular, modern businesses in Aurangabad are switching to custom Next.js solutions for better performance and security.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* WordPress Card */}
+              <div className="p-8 rounded-3xl bg-white/5 border border-white/10">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="p-3 rounded-xl bg-blue-500/20 text-blue-400"><Layers size={24}/></div>
+                  <h4 className="text-2xl font-bold text-white">WordPress</h4>
+                </div>
+                <ul className="space-y-4 text-gray-300">
+                  <li className="flex gap-3"><CheckCircle className="text-gray-500 shrink-0" size={18}/> Good for simple blogs</li>
+                  <li className="flex gap-3"><CheckCircle className="text-gray-500 shrink-0" size={18}/> Easy for non-techies</li>
+                  <li className="flex gap-3"><div className="w-4 h-4 rounded-full bg-red-500/50 flex items-center justify-center text-[10px]">✕</div> Slower loading speeds</li>
+                  <li className="flex gap-3"><div className="w-4 h-4 rounded-full bg-red-500/50 flex items-center justify-center text-[10px]">✕</div> Vulnerable to hacking</li>
+                  <li className="flex gap-3"><div className="w-4 h-4 rounded-full bg-red-500/50 flex items-center justify-center text-[10px]">✕</div> Reliance on heavy plugins</li>
+                </ul>
+              </div>
+
+              {/* Next.js Card */}
+              <div className="p-8 rounded-3xl bg-neon-purple/10 border border-neon-purple/30 relative">
+                <div className="absolute top-4 right-4 bg-neon-purple text-white text-xs font-bold px-3 py-1 rounded-full">RECOMMENDED</div>
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="p-3 rounded-xl bg-neon-purple/20 text-neon-purple"><Zap size={24}/></div>
+                  <h4 className="text-2xl font-bold text-white">Next.js (Custom Code)</h4>
+                </div>
+                <ul className="space-y-4 text-gray-300">
+                  <li className="flex gap-3"><CheckCircle className="text-neon-purple shrink-0" size={18}/> Blazing fast load times</li>
+                  <li className="flex gap-3"><CheckCircle className="text-neon-purple shrink-0" size={18}/> Superior SEO ranking</li>
+                  <li className="flex gap-3"><CheckCircle className="text-neon-purple shrink-0" size={18}/> Unhackable (Static generation)</li>
+                  <li className="flex gap-3"><CheckCircle className="text-neon-purple shrink-0" size={18}/> 100% Custom design freedom</li>
+                  <li className="flex gap-3"><CheckCircle className="text-neon-purple shrink-0" size={18}/> Scalable for high traffic</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* SERVICE 3: SOCIAL MEDIA MARKETING */}
         <ServiceLayout
@@ -181,7 +276,7 @@ export default function ServicesContent() {
           side="right"
           description={
             <>
-              Zaikron is a top-rated <strong className="text-white">social media marketing agency in Aurangabad</strong>, specializing in Instagram marketing, Facebook ads, Google Ads management, and comprehensive digital marketing strategies. Whether you're searching for <strong className="text-white">Instagram marketing near me Chhatrapati Sambhajinagar</strong> or need <strong className="text-white">Facebook advertising expert</strong>, our data-driven approach delivers measurable results.
+              Zaikron is a top-rated <strong className="text-white">social media marketing agency in Aurangabad</strong>, specializing in Instagram marketing, Facebook ads, Google Ads management, and comprehensive digital marketing strategies. Whether you're searching for <strong className="text-white">Instagram marketing near me Chhatrapati Sambhajinagar</strong> or need <strong className="text-white">Facebook advertising expert</strong>, our data-driven approach delivers measurable results. We also provide <strong className="text-white">influencer marketing services</strong> and <strong className="text-white">brand management solutions</strong>.
             </>
           }
           visual={
@@ -201,7 +296,7 @@ export default function ServicesContent() {
           }
           footerText="Social media marketing pricing starts from ₹5,000/month for Instagram management. Full-service packages from ₹15,000/month with ad spend."
           ctaLink="/services/social-media-marketing"
-          ctaText="Explore Social Media Marketing →"
+          ctaText="Explore Social Media Marketing "
         />
 
         {/* SERVICE 4: AI AUTOMATION */}
@@ -214,7 +309,7 @@ export default function ServicesContent() {
           side="left"
           description={
             <>
-              Our <strong className="text-white">bot creation company in Aurangabad</strong> builds intelligent chatbots, WhatsApp bots, and custom AI solutions that automate customer service, lead qualification, and sales. From <strong className="text-white">ChatGPT bot integration</strong> to <strong className="text-white">custom AI development</strong>, we leverage cutting-edge AI technology for business automation.
+              Our <strong className="text-white">bot creation company in Aurangabad</strong> builds intelligent chatbots, WhatsApp bots, and custom AI solutions that automate customer service, lead qualification, and sales. From <strong className="text-white">ChatGPT bot integration</strong> to <strong className="text-white">custom AI development</strong>, we leverage cutting-edge AI technology for business automation. We also offer <strong className="text-white">workflow automation services</strong> and <strong className="text-white">RAG chatbot development</strong>.
             </>
           }
           visual={
@@ -238,8 +333,58 @@ export default function ServicesContent() {
           }
           footerText="Chatbot development starts at ₹30,000 for basic bots. Advanced AI automation from ₹1,00,000+."
           ctaLink="/services/bot-automation"
-          ctaText="Explore AI Automation →"
+          ctaText="Explore AI Automation "
         />
+
+        {/* --- NEW SECTION: WEBSITE COST COMPARISON TABLE --- */}
+        <div className="mb-24 md:mb-40">
+          <h3 className="text-3xl md:text-5xl font-display font-bold text-white mb-8 text-center">Website Cost: Pricing Breakdown</h3>
+          <div className="overflow-x-auto rounded-3xl border border-white/10">
+            <table className="w-full text-left border-collapse min-w-[600px]">
+              <thead>
+                <tr className="bg-white/5 border-b border-white/10">
+                  <th className="p-6 text-white font-bold">Features</th>
+                  <th className="p-6 text-white font-bold">Basic (₹10K)</th>
+                  <th className="p-6 text-neon-cyan font-bold bg-neon-cyan/5 border-x border-white/10">Professional (₹30K)</th>
+                  <th className="p-6 text-white font-bold">Enterprise (₹100K+)</th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-300 text-sm">
+                <tr className="border-b border-white/5">
+                  <td className="p-6 font-bold text-white">Technology</td>
+                  <td className="p-6">HTML/CSS or Basic WP</td>
+                  <td className="p-6 text-neon-cyan font-bold bg-neon-cyan/5 border-x border-white/10">Next.js / Custom React</td>
+                  <td className="p-6">Full Stack (MERN/Python)</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="p-6 font-bold text-white">Pages</td>
+                  <td className="p-6">Up to 5 Pages</td>
+                  <td className="p-6 text-neon-cyan font-bold bg-neon-cyan/5 border-x border-white/10">10-15 Pages + Blog</td>
+                  <td className="p-6">Unlimited / Custom Modules</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="p-6 font-bold text-white">SEO</td>
+                  <td className="p-6">Basic Setup</td>
+                  <td className="p-6 text-neon-cyan font-bold bg-neon-cyan/5 border-x border-white/10">Advanced Technical SEO</td>
+                  <td className="p-6">Comprehensive SEO Strategy</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="p-6 font-bold text-white">Design</td>
+                  <td className="p-6">Standard Template</td>
+                  <td className="p-6 text-neon-cyan font-bold bg-neon-cyan/5 border-x border-white/10">Custom UI/UX Design</td>
+                  <td className="p-6">Premium Bespoke Design</td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="p-6 font-bold text-white">Functionality</td>
+                  <td className="p-6">Contact Form</td>
+                  <td className="p-6 text-neon-cyan font-bold bg-neon-cyan/5 border-x border-white/10">CMS, WhatsApp, Analytics</td>
+                  <td className="p-6">User Logins, E-commerce, API</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="text-center text-gray-500 text-sm mt-6">*Prices are indicative for the Aurangabad market and may vary based on specific requirements.</p>
+        </div>
 
         {/* SERVICE 5: DIGITAL MARKETING */}
         <ServiceLayout
@@ -251,7 +396,7 @@ export default function ServicesContent() {
           side="right"
           description={
             <>
-              Beyond social media, Zaikron offers comprehensive <strong className="text-white">digital marketing services in Aurangabad</strong> including SEO optimization, content marketing, email campaigns, and conversion rate optimization. We help businesses build <strong className="text-white">topical authority</strong> and rank for high-value keywords across search engines.
+              Beyond social media, Zaikron offers comprehensive <strong className="text-white">digital marketing services in Aurangabad</strong> including SEO optimization, content marketing, email campaigns, and conversion rate optimization. We help businesses build <strong className="text-white">topical authority</strong> and rank for high-value keywords across search engines. We provide <strong className="text-white">SEO audit services</strong> and <strong className="text-white">content marketing strategy</strong> tailored to your niche.
             </>
           }
           visual={
@@ -268,11 +413,42 @@ export default function ServicesContent() {
           }
           footerText="Digital marketing packages start from ₹10,000/month for SEO. Comprehensive campaigns from ₹10,000/month."
           ctaLink="/services/digital-marketing"
-          ctaText="Explore Digital Marketing →"
+          ctaText="Explore Digital Marketing "
         />
 
         {/* UNIQUE CONTENT SECTION */}
         <UniqueContentSection />
+
+        {/* --- NEW SECTION: FAQ WITH PEOPLE ALSO ASK (Long-Tail Keywords) --- */}
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="mt-24 md:mt-40 max-w-4xl mx-auto"
+        >
+          <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <FAQItem 
+              question="How much does website development cost in Aurangabad?" 
+              answer="Website development costs in Aurangabad typically range from ₹10,000 for a basic informational site to ₹50,000+ for a custom e-commerce or business platform. At Zaikron, we offer transparent packages tailored to your budget and business goals."
+            />
+            <FAQItem 
+              question="What is the best website builder for small businesses?" 
+              answer="While DIY builders like Wix exist, we recommend custom development (using Next.js or WordPress) for small businesses in Aurangabad. Custom sites perform better on Google, load faster, and are more secure, giving you a competitive edge over template-based competitor sites."
+            />
+            <FAQItem 
+              question="Do you offer free website consultations?" 
+              answer="Yes, Zaikron offers a free initial consultation and digital audit. We analyze your current online presence, discuss your goals, and provide a roadmap for your digital success without any obligation."
+            />
+            <FAQItem 
+              question="How long does it take to rank on Google?" 
+              answer="SEO is a long-term strategy. Typically, you can expect to see initial ranking improvements within 3-4 months, with significant traffic growth and top-page rankings occurring between 6-12 months of consistent optimization."
+            />
+            <FAQItem 
+              question="Do you provide website maintenance services?" 
+              answer="Yes, we offer comprehensive Annual Maintenance Contracts (AMC) for websites. This includes regular security updates, content changes, backups, and performance monitoring to ensure your site remains fast and secure year-round."
+            />
+          </div>
+        </motion.div>
 
         {/* INTEGRATION SECTION */}
         <motion.div 
@@ -374,6 +550,18 @@ function ServiceLayout({ num, title, subtitle, icon, color, side, description, v
           
           <div className="text-gray-400 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
             {description}
+          </div>
+
+          {/* LSI HEADERS INSERTION (H3/H4) */}
+          <div className="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <h3 className="text-white text-sm font-bold mb-1">Custom Solutions</h3>
+              <p className="text-xs text-gray-500">Tailored for Aurangabad businesses</p>
+            </div>
+            <div>
+              <h3 className="text-white text-sm font-bold mb-1">SEO Optimized</h3>
+              <p className="text-xs text-gray-500">Rank high on Google</p>
+            </div>
           </div>
 
           <div className={`pt-6 border-t ${colors[color].split(" ")[1]} mb-6`}>
@@ -550,14 +738,26 @@ function IndustryCard({ title, desc, examples }: any) {
 }
 
 function FAQItem({ question, answer }: any) {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="p-5 md:p-6 rounded-2xl bg-white/5 border border-white/10">
-      <h4 className="text-lg font-bold text-white mb-3">{question}</h4>
-      <p className="text-gray-400 text-sm leading-relaxed">{answer}</p>
+    <div className="border border-white/10 rounded-2xl bg-white/5 overflow-hidden">
+      <button 
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full p-6 flex items-center justify-between text-left text-white font-bold hover:bg-white/5 transition-colors"
+      >
+        {question}
+        <ChevronDown size={20} className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+      </button>
+      {isOpen && (
+        <div className="p-6 pt-0 text-gray-400 text-sm leading-relaxed border-t border-white/10">
+          {answer}
+        </div>
+      )}
     </div>
   );
 }
 
+// UNIQUE CONTENT SECTION (REUSED FROM PREVIOUS FILE TO MAINTAIN CONTENT INTEGRITY)
 function UniqueContentSection() {
   return (
     <motion.div
@@ -566,12 +766,12 @@ function UniqueContentSection() {
       viewport={{ once: true }}
       className="mt-24 mb-24 md:mt-40 md:mb-40"
     >
+      {/* Content from previous iteration preserved here for modularity */}
       <h2 className="text-3xl md:text-6xl font-display font-bold text-white mb-10 md:mb-16 text-center">
         Why Zaikron is Aurangabad's <span className="text-neon-cyan">#1 Web Development Company</span>
       </h2>
 
       <div className="prose prose-invert prose-lg max-w-none">
-        
         {/* About Our Aurangabad Presence */}
         <div className="mb-12 md:mb-16 p-6 md:p-8 rounded-3xl bg-white/5 border border-white/10">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 flex items-center gap-3">
@@ -585,7 +785,7 @@ function UniqueContentSection() {
             We understand the unique challenges faced by businesses in Aurangabad—from limited digital infrastructure to intense competition in traditional industries like manufacturing, textiles, education, and healthcare. Our <strong className="text-white">website development solutions</strong> are specifically designed to help Aurangabad businesses establish strong online presence, generate quality leads, and compete with metropolitan competitors.
           </p>
           <p className="text-gray-300 leading-relaxed text-base md:text-lg">
-            Whether you're a startup in MIDC industrial area, a retail store in Connaught Road, an educational institution near Aurangabad University, or a healthcare provider in N-Town, we've successfully delivered digital transformation projects that drive real business results. Our portfolio includes 50+ successful projects ranging from <strong className="text-white">small business websites starting at ₹10,000</strong> to <strong className="text-white">enterprise web applications exceeding so on</strong>.
+            Whether you're a startup in MIDC industrial area, a retail store in Connaught Road, an educational institution near Aurangabad University, or a healthcare provider in N-Town, we've successfully delivered digital transformation projects that drive real business results. Our portfolio includes 50+ successful projects ranging from <strong className="text-white">small business websites starting at ₹10,000</strong> to <strong className="text-white">enterprise web applications exceeding ₹1,00,000</strong>.
           </p>
         </div>
 
@@ -647,7 +847,7 @@ function UniqueContentSection() {
             Our <strong className="text-white">website development cost in Aurangabad</strong> is structured to be transparent and competitive. Unlike many agencies that hide costs or spring surprise charges, we provide detailed quotations upfront. Every package includes hosting, domain setup, SSL certificate, and post-launch support. We also offer flexible payment plans for businesses with budget constraints—pay 50% upfront and the remaining 50% after launch.
           </p>
           <p className="text-gray-300 leading-relaxed text-base md:text-lg">
-            For custom requirements like <strong className="text-white">educational portals, healthcare management systems, real estate platforms, or manufacturing websites</strong>, we provide tailored quotes after understanding your specific needs. Our average enterprise project ranges from ₹1,00,00 to so on depending on complexity, integrations, and custom features.
+            For custom requirements like <strong className="text-white">educational portals, healthcare management systems, real estate platforms, or manufacturing websites</strong>, we provide tailored quotes after understanding your specific needs. Our average enterprise project ranges from ₹1,00,000 to ₹5,00,000+ depending on complexity, integrations, and custom features.
           </p>
         </div>
 
@@ -845,49 +1045,6 @@ function UniqueContentSection() {
           </div>
         </div>
 
-        {/* FAQ Section */}
-        <div className="mb-12 md:mb-16 p-6 md:p-8 rounded-3xl bg-white/5 border border-white/10">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3">
-            <TrendingUp className="text-neon-pink shrink-0" size={32} />
-            Frequently Asked Questions - Web Development in Aurangabad
-          </h3>
-
-          <div className="space-y-6">
-            <FAQItem 
-              question="How long does it take to build a website in Aurangabad?"
-              answer="Basic websites (5-10 pages) typically take 2-3 weeks from design approval to launch. Professional business websites (15+ pages) take 4-6 weeks. E-commerce platforms or custom web applications take 8-16 weeks depending on complexity. We provide detailed timelines during consultation."
-            />
-            <FAQItem 
-              question="Do you provide website hosting and domain registration?"
-              answer="Yes, all our packages include domain registration (.com, .in, .co.in) and hosting for the first year. We use reliable Indian hosting providers with servers in Mumbai/Pune for fastest load times for Aurangabad audiences. After the first year, hosting costs ₹3,000-8,000/year depending on traffic and storage needs."
-            />
-            <FAQItem 
-              question="Will my website rank on Google?"
-              answer="We implement comprehensive SEO best practices in every website: keyword research, optimized content, meta tags, structured data, fast loading speed, mobile-responsiveness, and local SEO. While we can't guarantee #1 rankings (no ethical agency can), our track record shows 80%+ of clients ranking on page 1 within 6 months for their target keywords in Aurangabad searches."
-            />
-            <FAQItem 
-              question="Can I update website content myself after launch?"
-              answer="Absolutely! We provide a user-friendly Content Management System (CMS) where you can easily update text, images, blog posts, and products without any coding knowledge. We also provide training sessions and video tutorials. For complex updates, our support team is always available."
-            />
-            <FAQItem 
-              question="What's the difference between a ₹10,000 and ₹30,000 website?"
-              answer="The ₹10,000 starter package is perfect for small businesses needing simple online presence—basic design, 5 pages, basic SEO. The ₹30,000 professional package includes custom design, 15+ pages, advanced SEO with keyword research, CMS for easy updates, blog section, WhatsApp integration, and better hosting. Think of it as the difference between a basic showroom and a full-featured business platform."
-            />
-            <FAQItem 
-              question="Do you work with clients outside Aurangabad?"
-              answer="Yes! While we're based in Aurangabad, we serve clients across Maharashtra (Pune, Mumbai, Nashik, Nagpur) and all over India. For Aurangabad/Chhatrapati Sambhajinagar clients, we offer in-person meetings. For others, we work seamlessly via video calls, screen sharing, and project management tools."
-            />
-            <FAQItem 
-              question="What payment methods do you accept?"
-              answer="We accept bank transfers (NEFT/RTGS/IMPS), UPI, cheques, and online payments. Standard payment terms: 50% advance to start, 50% before launch. For projects above ₹1,00,000, we offer milestone-based payments. We also provide flexible payment plans for small businesses—discuss during consultation."
-            />
-            <FAQItem 
-              question="Can you redesign my existing website?"
-              answer="Yes! Website redesign is one of our specialties. If your current website looks outdated, loads slowly, or doesn't rank on Google, we can rebuild it with modern design, better performance, and improved SEO. Redesign projects start at ₹35,000 depending on existing site complexity."
-            />
-          </div>
-        </div>
-
         {/* Service Areas */}
         <div className="mb-12 md:mb-16">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 flex items-center gap-3">
@@ -915,35 +1072,6 @@ function UniqueContentSection() {
             Beyond Aurangabad, we also serve clients in: <strong className="text-white">Jalna, Parbhani, Beed, Osmanabad, Latur, Nanded, Ahmednagar, Nashik, and across Maharashtra</strong>. For outstation clients, we conduct initial meetings via video call and provide the same quality service remotely.
           </p>
         </div>
-
-        {/* Final CTA in Content Section */}
-        <div className="p-6 md:p-8 rounded-3xl bg-gradient-to-r from-neon-cyan/10 via-neon-purple/10 to-neon-pink/10 border border-white/10 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Ready to Transform Your Business Digitally?
-          </h3>
-          <p className="text-gray-300 leading-relaxed mb-8 max-w-3xl mx-auto text-base md:text-lg">
-            Join 50+ successful Aurangabad businesses who've partnered with Zaikron for their digital journey. Get a free consultation, project quote, and SEO audit—no obligations, no pressure. Let's discuss how we can help your business dominate online.
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-            <Link 
-              href="/contact"
-              className="w-full md:w-auto px-10 py-4 bg-white text-black font-bold rounded-full hover:scale-105 transition-transform inline-flex justify-center items-center gap-2"
-            >
-              Schedule Free Consultation <ArrowUpRight size={20} />
-            </Link>
-            <Link 
-              href="tel:+919730416763"
-              className="w-full md:w-auto px-10 py-4 bg-white/10 backdrop-blur-md text-white font-semibold rounded-full border border-white/20 hover:bg-white/20 transition-all flex justify-center"
-            >
-              📞 Call +91-9730416763
-            </Link>
-          </div>
-          <p className="text-xs md:text-sm text-gray-500 mt-6">
-            <strong className="text-white">Office Address:</strong> Usmanpura, Aurangabad, Maharashtra 431005<br/>
-            <strong className="text-white">Email:</strong> hello@zaikron.com | <strong className="text-white">Working Hours:</strong> Mon-Sat, 9 AM - 6 PM
-          </p>
-        </div>
-
       </div>
     </motion.div>
   );
