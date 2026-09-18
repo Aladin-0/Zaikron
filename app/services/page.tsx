@@ -121,7 +121,7 @@ export const metadata: Metadata = {
     title: "Zaikron Services | Web & App Development, Social Media Marketing",
     description: "Digital services in Aurangabad: Website development from ₹25K, app development, Instagram marketing, Google Ads. Top web development company Chhatrapati Sambhajinagar.",
     images: ['https://zaikron.com/twitter-services.jpg'],
-    site: '@zaikron_aurangabad',
+    site: '@zaikron',
     creator: '@zaikron_dev',
   },
   
@@ -157,7 +157,7 @@ const jsonLd = {
       "name": "Zaikron - Web Development & Digital Marketing Company",
       "description": "Award-winning web development company in Aurangabad specializing in website development, app development, social media marketing, and AI automation.",
       "url": "https://zaikron.com/services",
-      "image": "https://zaikron.com/logo.jpg",
+      "image": "https://zaikron.com/logo/Zaikron.png",
       "telephone": "+91-9730416763",
       "email": "hello@zaikron.com",
       "address": {
@@ -183,8 +183,9 @@ const jsonLd = {
       "sameAs": [
         "https://g.page/zaikron",
         "https://facebook.com/zaikron",
-        "https://instagram.com/zaikron",
-        "https://linkedin.com/company/zaikron"
+        "https://www.instagram.com/zaikronstudio",
+        "https://linkedin.com/company/zaikron",
+        "https://wa.me/919730416763"
       ],
       "openingHoursSpecification": [
         {
@@ -214,7 +215,7 @@ const jsonLd = {
               "@type": "Offer",
               "price": "25000",
               "priceCurrency": "INR",
-              "priceValidUntil": "2025-12-31"
+              "priceValidUntil": "2026-12-31"
             }
           },
           {
@@ -235,7 +236,7 @@ const jsonLd = {
               "@type": "Offer",
               "price": "50000",
               "priceCurrency": "INR",
-              "priceValidUntil": "2025-12-31"
+              "priceValidUntil": "2026-12-31"
             }
           },
           {
@@ -246,7 +247,7 @@ const jsonLd = {
               "@type": "Offer",
               "price": "10000",
               "priceCurrency": "INR",
-              "priceValidUntil": "2025-12-31"
+              "priceValidUntil": "2026-12-31"
             }
           }
         ]

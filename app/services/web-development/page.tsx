@@ -106,7 +106,7 @@ const jsonLd = {
       "@type": "LocalBusiness",
       "@id": "https://zaikron.com/#localbusiness",
       "name": "Zaikron - Web Development Services Aurangabad",
-      "image": "https://zaikron.com/logo.png",
+      "image": "https://zaikron.com/logo/Zaikron.png",
       "telephone": "+919730416763",
       "email": "hello@zaikron.com",
       "address": {

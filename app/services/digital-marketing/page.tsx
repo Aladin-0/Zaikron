@@ -124,7 +124,7 @@ const jsonLd = {
       "@type": "LocalBusiness",
       "@id": "https://zaikron.com/#localbusiness",
       "name": "Zaikron Digital Marketing - Aurangabad",
-      "image": "https://zaikron.com/logo.png",
+      "image": "https://zaikron.com/logo/Zaikron.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Costa Mapal, Peer Bazar Rd, Usmanpura",

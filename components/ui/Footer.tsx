@@ -159,7 +159,7 @@ export default function Footer() {
 
             {/* Instagram Button */}
             <a 
-              href="https://www.instagram.com/zaikron.tech?igsh=MTV3Mm1pMnc1OWVlYg==" 
+              href="https://www.instagram.com/zaikronstudio" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 md:p-5 rounded-lg md:rounded-3xl bg-gradient-to-r from-purple-900/20 to-pink-900/20 border-t border-l border-white/10 hover:from-purple-900/40 hover:to-pink-900/40 transition-all flex items-center justify-between group"

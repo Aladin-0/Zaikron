@@ -106,7 +106,7 @@ const jsonLd = {
       "@type": "LocalBusiness",
       "@id": "https://zaikron.com/#localbusiness",
       "name": "Zaikron - Digital Marketing Agency Aurangabad",
-      "image": "https://zaikron.com/logo.png",
+      "image": "https://zaikron.com/logo/Zaikron.png",
       "telephone": "+919730416763",
       "email": "hello@zaikron.com",
       "address": {

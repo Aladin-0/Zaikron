@@ -5,8 +5,8 @@ import AurangabadContent from '../../components/ui/AurangabadContent';
 
 // --- 1. SEO METADATA (1000+ KEYWORDS INJECTED) ---
 export const metadata: Metadata = {
-  title: "Website Development Company in Aurangabad | #1 Custom Web Design & SEO",
-  description: "Zaikron is Aurangabad's #1 Website Development Company. Custom websites from ₹10K. E-commerce, SEO, & App Development. 300% Growth Guarantee. Call Now.",
+  title: "Website Development Company in Aurangabad | Zaikron — Local, Fast & SEO-Ready",
+  description: "Zaikron is Aurangabad's leading local website development company. Custom websites from ₹15,000, e-commerce from ₹60,000. Serving Cidco, Waluj, Garkheda, Usmanpura & all of Chhatrapati Sambhajinagar. Call +91-9730416763.",
   keywords: [
     // PRIMARY KEYWORDS
     "website development company Aurangabad", "web design services Aurangabad", "website developer Aurangabad",
@@ -79,7 +79,7 @@ const jsonLd = [
     "@type": "LocalBusiness",
     "@id": "https://zaikron.com/#localbusiness",
     "name": "Zaikron - Website Development Company in Aurangabad",
-    "image": "https://zaikron.com/logo.png",
+    "image": "https://zaikron.com/logo/Zaikron.png",
     "telephone": "+919730416763",
     "email": "hello@zaikron.com",
     "address": {
@@ -91,17 +91,22 @@ const jsonLd = [
       "addressCountry": "IN"
     },
     "geo": { "@type": "GeoCoordinates", "latitude": 19.8762, "longitude": 75.3433 },
-    "priceRange": "₹10,000 - ₹1,00,000",
+    "priceRange": "₹15,000 - ₹5,00,000",
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.8",
+      "ratingValue": "4.9",
       "reviewCount": "50"
     },
     "areaServed": [
       { "@type": "City", "name": "Aurangabad" },
       { "@type": "City", "name": "Chhatrapati Sambhajinagar" },
-      { "@type": "City", "name": "Waluj" },
-      { "@type": "City", "name": "Cidco" }
+      { "@type": "Neighborhood", "name": "Waluj MIDC" },
+      { "@type": "Neighborhood", "name": "Cidco" },
+      { "@type": "Neighborhood", "name": "Garkheda" },
+      { "@type": "Neighborhood", "name": "Usmanpura" },
+      { "@type": "Neighborhood", "name": "Shendra MIDC" },
+      { "@type": "Neighborhood", "name": "N-Town" },
+      { "@type": "Neighborhood", "name": "Auric City" }
     ]
   },
   {
@@ -113,9 +118,9 @@ const jsonLd = [
       "@type": "OfferCatalog",
       "name": "Website Development Packages",
       "itemListElement": [
-        { "@type": "Offer", "name": "Startup Website", "price": "10000", "priceCurrency": "INR" },
-        { "@type": "Offer", "name": "Business Website", "price": "25000", "priceCurrency": "INR" },
-        { "@type": "Offer", "name": "E-Commerce Website", "price": "40000", "priceCurrency": "INR" }
+        { "@type": "Offer", "name": "Starter Website", "price": "15000", "priceCurrency": "INR", "priceValidUntil": "2026-12-31" },
+        { "@type": "Offer", "name": "Business Website", "price": "30000", "priceCurrency": "INR", "priceValidUntil": "2026-12-31" },
+        { "@type": "Offer", "name": "E-Commerce Website", "price": "60000", "priceCurrency": "INR", "priceValidUntil": "2026-12-31" }
       ]
     }
   },
@@ -125,18 +130,28 @@ const jsonLd = [
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How much does a website cost in Aurangabad?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Website cost depends on complexity. Simple websites start at ₹10,000. Professional business websites range from ₹20,000-40,000." }
+        "name": "Which is the best website development company in Aurangabad?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Zaikron is one of the top website development companies in Aurangabad (Chhatrapati Sambhajinagar). We are a genuinely local team based in Usmanpura, Aurangabad — not a Mumbai agency with a branch address. We build fast, SEO-optimized websites starting from ₹15,000." }
       },
       {
         "@type": "Question",
-        "name": "How long does it take to build a website?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Simple websites take 2 weeks. Professional websites take 3-4 weeks. E-commerce takes 4-6 weeks." }
+        "name": "How much does a website cost in Aurangabad in 2026?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Website development cost in Aurangabad starts from ₹15,000 for a basic business website. A professional SEO website costs ₹25,000–₹40,000. E-commerce websites start from ₹60,000. Zaikron offers free consultation." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to build a website in Aurangabad?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Zaikron delivers basic websites in 1–2 weeks. Professional websites in 2–4 weeks. E-commerce in 4–6 weeks." }
       },
       {
         "@type": "Question",
         "name": "Can I rank on Google with a new website?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. With our SEO expertise, you can expect initial rankings in 2-3 months and Page 1 rankings within 6-12 months." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. With our SEO-first websites, you can expect initial Google rankings in 1–2 months for local Aurangabad searches and stronger rankings in 3–6 months." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you build websites for MIDC companies in Aurangabad?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Zaikron specialises in professional websites for manufacturers and exporters in Waluj MIDC, Shendra MIDC, Chikalthana MIDC, and Auric City, Aurangabad." }
       }
     ]
   }

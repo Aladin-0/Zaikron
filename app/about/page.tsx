@@ -71,9 +71,9 @@ const jsonLd = {
       "@id": "https://zaikron.com/#organization",
       "name": "Zaikron",
       "url": "https://zaikron.com",
-      "logo": "https://zaikron.com/logo.png",
+      "logo": "https://zaikron.com/logo/Zaikron.png",
       "sameAs": [
-        "https://instagram.com/zaikron.tech",
+        "https://www.instagram.com/zaikronstudio",
         "https://facebook.com/zaikron"
       ],
       "contactPoint": {

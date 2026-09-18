@@ -267,11 +267,11 @@ const jsonLdSchemas = [
     "@type": "Organization",
     "name": "Zaikron",
     "url": "https://zaikron.com",
-    "logo": "https://zaikron.com/logo.png",
+    "logo": "https://zaikron.com/logo/Zaikron.png",
     "description": "Web development, app development, and digital marketing agency in Aurangabad, Maharashtra.",
     "sameAs": [
       "https://facebook.com/zaikron",
-      "https://instagram.com/zaikron.tech",
+      "https://www.instagram.com/zaikronstudio",
       "https://linkedin.com/company/zaikron"
     ],
     "aggregateRating": {

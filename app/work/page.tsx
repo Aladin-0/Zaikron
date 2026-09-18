@@ -269,7 +269,7 @@ const jsonLd = {
       "name": "Zaikron - Web Development Company Aurangabad",
       "description": "Web development company in Aurangabad offering website development, app development, social media marketing, and AI bot creation.",
       "url": "https://zaikron.com",
-      "image": "https://zaikron.com/logo.jpg",
+      "image": "https://zaikron.com/logo/Zaikron.png",
       "telephone": "+91-XXXXXXXXXX",
       "address": {
         "@type": "PostalAddress",
@@ -301,7 +301,7 @@ const jsonLd = {
       "sameAs": [
         "https://g.page/zaikron-aurangabad",
         "https://facebook.com/zaikron",
-        "https://instagram.com/zaikron",
+        "https://www.instagram.com/zaikronstudio",
         "https://linkedin.com/company/zaikron"
       ]
     },
@@ -333,7 +333,7 @@ const jsonLd = {
       "alternateName": "Zaikron Web Development",
       "description": "Leading web development company in Aurangabad specializing in website development, app development, social media marketing, and AI automation.",
       "url": "https://zaikron.com",
-      "logo": "https://zaikron.com/logo.jpg",
+      "logo": "https://zaikron.com/logo/Zaikron.png",
       "image": "https://zaikron.com/hero-image.jpg",
       "contactPoint": {
         "@type": "ContactPoint",
@@ -344,7 +344,7 @@ const jsonLd = {
       },
       "sameAs": [
         "https://facebook.com/zaikron",
-        "https://instagram.com/zaikron",
+        "https://www.instagram.com/zaikronstudio",
         "https://twitter.com/zaikron",
         "https://linkedin.com/company/zaikron"
       ]

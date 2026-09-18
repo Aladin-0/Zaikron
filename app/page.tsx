@@ -1,498 +1,28 @@
 import { Metadata, Viewport } from 'next';
 import HomeClient from '../components/HomeClient';
 
-// ========== COMPREHENSIVE SEO KEYWORDS (1000+ PER SERVICE) ==========
-// (Keywords preserved exactly as before for Metadata)
-
-// WEBSITE DEVELOPMENT KEYWORDS (1000+)
-const websiteDevelopmentKeywords = [
-  "web development company Aurangabad", "website developer Chhatrapati Sambhajinagar", "web developer Aurangabad",
-  "website development Aurangabad", "web design company Chhatrapati Sambhajinagar", "best web developer Aurangabad",
-  "professional website developer", "custom website development Aurangabad", "responsive web design Chhatrapati Sambhajinagar",
-  "SEO website development Aurangabad", "ecommerce website developer", "Next.js developer Aurangabad",
-  "React developer Chhatrapati Sambhajinagar", "Node.js developer Aurangabad", "WordPress developer Chhatrapati Sambhajinagar",
-  "website redesign Aurangabad", "web application development", "business website developer Aurangabad",
-  "startup website development", "portfolio website developer", "real estate website Aurangabad",
-  "restaurant website developer", "doctor website development", "lawyer website Aurangabad",
-  "shop website developer Chhatrapati Sambhajinagar", "landing page developer", "SaaS website development",
-  "PWA developer Aurangabad", "JAMstack developer", "headless CMS development", "API development Aurangabad",
-  "database developer Chhatrapati Sambhajinagar", "PostgreSQL developer", "MongoDB developer Aurangabad",
-  "website developer near me", "web design near me Chhatrapati Sambhajinagar", "affordable web developer Aurangabad",
-  "best website company Chhatrapati Sambhajinagar", "top web developer Aurangabad", "website cost Chhatrapati Sambhajinagar",
-  "website development cost Aurangabad", "how much website cost", "web developer price list",
-  "website development services", "web development agency Aurangabad", "digital agency Chhatrapati Sambhajinagar",
-  "IT company Aurangabad", "software company Chhatrapati Sambhajinagar", "tech company Aurangabad",
-  "web company Chhatrapati Sambhajinagar", "web service provider Aurangabad", "web hosting Chhatrapati Sambhajinagar",
-  "website maintenance Aurangabad", "website support Chhatrapati Sambhajinagar", "website updates Aurangabad",
-  "website optimization Chhatrapati Sambhajinagar", "website speed optimization Aurangabad", "performance optimization",
-  "mobile optimization Aurangabad", "mobile-first design Chhatrapati Sambhajinagar", "responsive design Aurangabad",
-  "website security Chhatrapati Sambhajinagar", "SSL certificate Aurangabad", "website encryption",
-  "HTTPS website Chhatrapati Sambhajinagar", "secure website Aurangabad", "website backup Chhatrapati Sambhajinagar",
-  "website recovery Aurangabad", "website migration Chhatrapati Sambhajinagar", "website transfer Aurangabad",
-  "website audit Chhatrapati Sambhajinagar", "website analysis Aurangabad", "SEO audit Chhatrapati Sambhajinagar",
-  "conversion optimization Aurangabad", "CRO services Chhatrapati Sambhajinagar", "A/B testing Aurangabad",
-  "user experience design Chhatrapati Sambhajinagar", "UX design Aurangabad", "UI design Chhatrapati Sambhajinagar",
-  "wireframing Aurangabad", "prototyping Chhatrapati Sambhajinagar", "mockup design Aurangabad",
-  "brand identity Chhatrapati Sambhajinagar", "logo design Aurangabad", "branding services Chhatrapati Sambhajinagar",
-  "graphic design Aurangabad", "visual design Chhatrapati Sambhajinagar", "creative design Aurangabad",
-  "e-commerce website Chhatrapati Sambhajinagar", "online store Aurangabad", "shopping cart Chhatrapati Sambhajinagar",
-  "payment gateway Aurangabad", "Shopify developer Chhatrapati Sambhajinagar", "WooCommerce developer Aurangabad",
-  "BigCommerce developer Chhatrapati Sambhajinagar", "Magento developer Aurangabad", "OpenCart developer Chhatrapati Sambhajinagar",
-  "blog website Aurangabad", "news website Chhatrapati Sambhajinagar", "content management Aurangabad",
-  "CMS development Chhatrapati Sambhajinagar", "WordPress development Aurangabad", "Drupal developer Chhatrapati Sambhajinagar",
-  "Joomla developer Aurangabad", "static website Chhatrapati Sambhajinagar", "dynamic website Aurangabad",
-  "database website Chhatrapati Sambhajinagar", "backend development Aurangabad", "frontend development Chhatrapati Sambhajinagar",
-  "full-stack developer Aurangabad", "MEAN stack Chhatrapati Sambhajinagar", "MERN stack Aurangabad",
-  "Python developer Chhatrapati Sambhajinagar", "PHP developer Aurangabad", "Java developer Chhatrapati Sambhajinagar",
-  "C# developer Aurangabad", "Ruby developer Chhatrapati Sambhajinagar", "Go developer Aurangabad",
-  "Rust developer Chhatrapati Sambhajinagar", "Kotlin developer Aurangabad", "Swift developer Chhatrapati Sambhajinagar",
-  "website design Aurangabad", "web layout Chhatrapati Sambhajinagar", "web template Aurangabad",
-  "website template Chhatrapati Sambhajinagar", "website builder Aurangabad", "website creator Chhatrapati Sambhajinagar",
-  "DIY website Aurangabad", "no-code website Chhatrapati Sambhajinagar", "low-code website Aurangabad",
-  "website analytics Chhatrapati Sambhajinagar", "website traffic Aurangabad", "visitor tracking Chhatrapati Sambhajinagar",
-  "Google Analytics Aurangabad", "conversion tracking Chhatrapati Sambhajinagar", "goal tracking Aurangabad",
-  "heat mapping Chhatrapati Sambhajinagar", "session recording Aurangabad", "user behavior Chhatrapati Sambhajinagar",
-  "website testing Aurangabad", "QA testing Chhatrapati Sambhajinagar", "cross-browser testing Aurangabad",
-  "performance testing Chhatrapati Sambhajinagar", "load testing Aurangabad", "stress testing Chhatrapati Sambhajinagar",
-  "security testing Aurangabad", "penetration testing Chhatrapati Sambhajinagar", "vulnerability scanning Aurangabad",
-  "website compliance Chhatrapati Sambhajinagar", "GDPR compliance Aurangabad", "CCPA compliance Chhatrapati Sambhajinagar",
-  "accessibility Aurangabad", "WCAG compliance Chhatrapati Sambhajinagar", "ADA compliance Aurangabad",
-  "website ranking Chhatrapati Sambhajinagar", "Google ranking Aurangabad", "search ranking Chhatrapati Sambhajinagar",
-  "local ranking Aurangabad", "Google Map ranking Chhatrapati Sambhajinagar", "local SEO Aurangabad",
-  "on-page SEO Chhatrapati Sambhajinagar", "off-page SEO Aurangabad", "technical SEO Chhatrapati Sambhajinagar",
-  "keyword research Aurangabad", "content strategy Chhatrapati Sambhajinagar", "link building Aurangabad",
-  "backlink generation Chhatrapati Sambhajinagar", "internal linking Aurangabad", "anchor text optimization Chhatrapati Sambhajinagar",
-  "meta tags Aurangabad", "meta description Chhatrapati Sambhajinagar", "title tags Aurangabad",
-  "header tags Chhatrapati Sambhajinagar", "schema markup Aurangabad", "structured data Chhatrapati Sambhajinagar",
-  "rich snippets Aurangabad", "featured snippets Chhatrapati Sambhajinagar", "knowledge panel Aurangabad",
-  "SERP optimization Chhatrapati Sambhajinagar", "click-through rate Aurangabad", "impressions Chhatrapati Sambhajinagar",
-  "indexing Aurangabad", "crawlability Chhatrapati Sambhajinagar", "robots.txt Aurangabad",
-  "sitemap Chhatrapati Sambhajinagar", "XML sitemap Aurangabad", "mobile sitemap Chhatrapati Sambhajinagar",
-  "core web vitals Aurangabad", "page speed Chhatrapati Sambhajinagar", "loading time Aurangabad",
-  "user experience Chhatrapati Sambhajinagar", "core metrics Aurangabad", "LCP Chhatrapati Sambhajinagar",
-  "FID Aurangabad", "CLS Chhatrapati Sambhajinagar", "web performance Aurangabad",
-  "caching Chhatrapati Sambhajinagar", "compression Aurangabad", "minification Chhatrapati Sambhajinagar",
-  "CDN Aurangabad", "content delivery Chhatrapati Sambhajinagar", "image optimization Aurangabad",
-  "lazy loading Chhatrapati Sambhajinagar", "critical rendering path Aurangabad", "render blocking Chhatrapati Sambhajinagar"
-].slice(0, 1000);
-
-// APP DEVELOPMENT KEYWORDS (1000+)
-const appDevelopmentKeywords = [
-  "app development company Aurangabad", "mobile app developer Chhatrapati Sambhajinagar", "Android app developer Aurangabad",
-  "iOS app development Chhatrapati Sambhajinagar", "React Native developer Aurangabad", "Flutter developer Chhatrapati Sambhajinagar",
-  "hybrid app developer", "cross platform app development", "native app developer Aurangabad", "app developer near me",
-  "Play Store app developer", "App Store developer Aurangabad", "business app development", "ecommerce app developer",
-  "delivery app development Aurangabad", "booking app developer", "chat app development", "social media app Aurangabad",
-  "fitness app developer", "healthcare app development", "education app Aurangabad", "real estate app developer",
-  "restaurant app Aurangabad", "food delivery app", "taxi app Aurangabad", "ride sharing app",
-  "travel app Aurangabad", "hotel app developer", "banking app Aurangabad", "fintech app developer",
-  "cryptocurrency app Aurangabad", "payment app developer", "wallet app Aurangabad", "investment app",
-  "stock market app Aurangabad", "trading app developer", "forex app Aurangabad", "gaming app",
-  "game development Aurangabad", "AR app Chhatrapati Sambhajinagar", "VR app Aurangabad",
-  "IoT app development", "smart home app Aurangabad", "wearable app Chhatrapati Sambhajinagar",
-  "app design Aurangabad", "app UI design Chhatrapati Sambhajinagar", "app UX design Aurangabad",
-  "wireframing app", "prototyping app Aurangabad", "app mockup Chhatrapati Sambhajinagar",
-  "app API development Aurangabad", "backend API", "API integration Chhatrapati Sambhajinagar",
-  "RESTful API Aurangabad", "GraphQL API Chhatrapati Sambhajinagar", "SOAP API Aurangabad",
-  "database design Chhatrapati Sambhajinagar", "Firebase Aurangabad", "Realtime database Chhatrapati Sambhajinagar",
-  "cloud storage app Aurangabad", "AWS app Chhatrapati Sambhajinagar", "Google Cloud app Aurangabad",
-  "Azure app Chhatrapati Sambhajinagar", "push notifications Aurangabad", "in-app messaging Chhatrapati Sambhajinagar",
-  "app analytics Aurangabad", "app metrics Chhatrapati Sambhajinagar", "user tracking app Aurangabad",
-  "app monetization Chhatrapati Sambhajinagar", "in-app purchases Aurangabad", "app advertising Chhatrapati Sambhajinagar",
-  "app marketing Aurangabad", "app promotion Chhatrapati Sambhajinagar", "app store optimization Aurangabad",
-  "ASO Chhatrapati Sambhajinagar", "app rating boost Aurangabad", "app review management Chhatrapati Sambhajinagar",
-  "app testing Aurangabad", "beta testing Chhatrapati Sambhajinagar", "QA testing app Aurangabad",
-  "app security Chhatrapati Sambhajinagar", "app encryption Aurangabad", "biometric app Chhatrapati Sambhajinagar",
-  "two-factor auth app Aurangabad", "authentication app", "authorization app Aurangabad",
-  "app permissions Chhatrapati Sambhajinagar", "privacy app Aurangabad", "GDPR app Chhatrapati Sambhajinagar",
-  "app compliance Aurangabad", "app standards Chhatrapati Sambhajinagar", "app guidelines Aurangabad",
-  "app store guidelines Chhatrapati Sambhajinagar", "Play Store guidelines Aurangabad", "App Store guidelines Chhatrapati Sambhajinagar",
-  "app rejection Aurangabad", "app approval Chhatrapati Sambhajinagar", "app submission Aurangabad",
-  "app distribution Chhatrapati Sambhajinagar", "app deployment Aurangabad", "app release Chhatrapati Sambhajinagar",
-  "app updates Aurangabad", "app patches Chhatrapati Sambhajinagar", "bug fixes app Aurangabad",
-  "app version control Chhatrapati Sambhajinagar", "app versioning Aurangabad", "app changelog Chhatrapati Sambhajinagar",
-  "app roadmap Aurangabad", "app planning Chhatrapati Sambhajinagar", "app strategy Aurangabad",
-  "app requirements Chhatrapati Sambhajinagar", "feature list app Aurangabad", "app specifications Chhatrapati Sambhajinagar",
-  "app scope Aurangabad", "app timeline Chhatrapati Sambhajinagar", "app deadline Aurangabad",
-  "app budget Chhatrapati Sambhajinagar", "app cost Aurangabad", "app pricing model Chhatrapati Sambhajinagar",
-  "app revenue Aurangabad", "app profitability Chhatrapati Sambhajinagar", "app business model Aurangabad",
-  "app scalability Chhatrapati Sambhajinagar", "app performance Aurangabad", "app optimization Chhatrapati Sambhajinagar",
-  "app speed Aurangabad", "app responsiveness Chhatrapati Sambhajinagar", "app latency Aurangabad",
-  "app bandwidth Chhatrapati Sambhajinagar", "app storage Aurangabad", "app memory Chhatrapati Sambhajinagar",
-  "app battery consumption Aurangabad", "app battery optimization Chhatrapati Sambhajinagar", "app power management Aurangabad",
-  "offline app Chhatrapati Sambhajinagar", "app sync Aurangabad", "app offline mode Chhatrapati Sambhajinagar",
-  "progressive web app Aurangabad", "PWA Chhatrapati Sambhajinagar", "web app Aurangabad",
-  "responsive app Chhatrapati Sambhajinagar", "adaptive app Aurangabad", "mobile responsive app Chhatrapati Sambhajinagar",
-  "tablet app Aurangabad", "wearable responsive Chhatrapati Sambhajinagar", "smart TV app Aurangabad",
-  "Kotlin app Chhatrapati Sambhajinagar", "Java app Aurangabad", "Swift app Chhatrapati Sambhajinagar",
-  "Objective C app Aurangabad", "Python app Chhatrapati Sambhajinagar", "JavaScript app Aurangabad",
-  "TypeScript app Chhatrapati Sambhajinagar", "Dart app Aurangabad", "Go app Chhatrapati Sambhajinagar",
-  "Rust app Aurangabad", "C++ app Chhatrapati Sambhajinagar", "C# app Aurangabad",
-  "app framework Chhatrapati Sambhajinagar", "app library Aurangabad", "app toolkit Chhatrapati Sambhajinagar",
-  "app SDK Aurangabad", "app plugins Chhatrapati Sambhajinagar", "app extensions Aurangabad",
-  "native performance Chhatrapati Sambhajinagar", "hybrid performance Aurangabad", "cross-platform performance Chhatrapati Sambhajinagar",
-  "app store listing Aurangabad", "app screenshots Chhatrapati Sambhajinagar", "app description Aurangabad",
-  "app keywords Chhatrapati Sambhajinagar", "app category Aurangabad", "app rating Chhatrapati Sambhajinagar",
-  "user reviews Aurangabad", "app testimonials Chhatrapati Sambhajinagar", "app feedback Aurangabad"
-].slice(0, 1000);
-
-// INSTAGRAM MARKETING KEYWORDS (1000+)
-const instagramMarketingKeywords = [
-  "Instagram marketing Aurangabad", "social media marketing Chhatrapati Sambhajinagar", "Instagram marketing agency",
-  "Facebook ads Aurangabad", "Instagram ads manager", "social media agency Chhatrapati Sambhajinagar",
-  "digital marketing company Aurangabad", "Instagram growth Aurangabad", "Facebook marketing Chhatrapati Sambhajinagar",
-  "Google Ads Aurangabad", "social media manager", "Instagram Reels marketing", "content creator Aurangabad",
-  "social media ads specialist", "Instagram influencer marketing", "Facebook ad campaigns Aurangabad",
-  "social media growth agency", "Instagram account management", "viral marketing Aurangabad",
-  "Instagram content strategy Chhatrapati Sambhajinagar", "social media strategy Aurangabad", "digital strategy Chhatrapati Sambhajinagar",
-  "Instagram brand Aurangabad", "brand management Chhatrapati Sambhajinagar", "brand identity Aurangabad",
-  "brand awareness Chhatrapati Sambhajinagar", "brand positioning Aurangabad", "brand voice Chhatrapati Sambhajinagar",
-  "Instagram storytelling Aurangabad", "social storytelling Chhatrapati Sambhajinagar", "narrative marketing Aurangabad",
-  "Instagram aesthetic Chhatrapati Sambhajinagar", "feed design Aurangabad", "Instagram feed Chhatrapati Sambhajinagar",
-  "feed curation Aurangabad", "visual consistency Chhatrapati Sambhajinagar", "color psychology Aurangabad",
-  "typography social media Chhatrapati Sambhajinagar", "Instagram filters Aurangabad", "filter creation Chhatrapati Sambhajinagar",
-  "Instagram stickers Aurangabad", "polls Instagram Chhatrapati Sambhajinagar", "quizzes Instagram Aurangabad",
-  "questions Instagram Chhatrapati Sambhajinagar", "countdown stickers Aurangabad", "music stickers Chhatrapati Sambhajinagar",
-  "hashtag strategy Aurangabad", "trending hashtags Chhatrapati Sambhajinagar", "hashtag research Aurangabad",
-  "hashtag generator Chhatrapati Sambhajinagar", "branded hashtag Aurangabad", "hashtag campaign Chhatrapati Sambhajinagar",
-  "Instagram captions Aurangabad", "copywriting Instagram Chhatrapati Sambhajinagar", "caption writing Aurangabad",
-  "call to action Chhatrapati Sambhajinagar", "CTA strategies Aurangabad", "engagement copywriting Chhatrapati Sambhajinagar",
-  "storytelling copy Aurangabad", "promotional copy Chhatrapati Sambhajinagar", "sales copy Aurangabad",
-  "Instagram engagement Chhatrapati Sambhajinagar", "engagement rate Aurangabad", "engagement metrics Chhatrapati Sambhajinagar",
-  "Instagram likes Aurangabad", "Instagram comments Chhatrapati Sambhajinagar", "Instagram shares Aurangabad",
-  "Instagram saves Chhatrapati Sambhajinagar", "Instagram reach Aurangabad", "Instagram impressions Chhatrapati Sambhajinagar",
-  "Instagram followers Aurangabad", "follower growth Chhatrapati Sambhajinagar", "gaining followers Aurangabad",
-  "follow strategies Chhatrapati Sambhajinagar", "follow for follow Aurangabad", "engagement pods Chhatrapati Sambhajinagar",
-  "engagement groups Aurangabad", "Instagram DM Chhatrapati Sambhajinagar", "direct messaging Aurangabad",
-  "Instagram stories Chhatrapati Sambhajinagar", "story strategy Aurangabad", "story ideas Chhatrapati Sambhajinagar",
-  "story sequences Aurangabad", "story highlights Chhatrapati Sambhajinagar", "story templates Aurangabad",
-  "Instagram Live Chhatrapati Sambhajinagar", "live streaming Aurangabad", "live video Chhatrapati Sambhajinagar",
-  "IGTV Aurangabad", "Instagram video Chhatrapati Sambhajinagar", "video marketing Aurangabad",
-  "video creation Chhatrapati Sambhajinagar", "video editing Aurangabad", "short form video Chhatrapati Sambhajinagar",
-  "Instagram Reels Aurangabad", "Reels editing Chhatrapati Sambhajinagar", "viral Reels Aurangabad",
-  "Reels strategy Chhatrapati Sambhajinagar", "Reels ideas Aurangabad", "trending Reels Chhatrapati Sambhajinagar",
-  "Carousel posts Aurangabad", "carousel strategy Chhatrapati Sambhajinagar", "multi-image posts Aurangabad",
-  "photo grid Chhatrapati Sambhajinagar", "grid layouts Aurangabad", "Boomerang Instagram Chhatrapati Sambhajinagar",
-  "Instagram ads Aurangabad", "Instagram sponsored posts Chhatrapati Sambhajinagar", "promoted posts Aurangabad",
-  "Instagram shopping Chhatrapati Sambhajinagar", "shoppable posts Aurangabad", "product tags Chhatrapati Sambhajinagar",
-  "Instagram checkout Aurangabad", "social commerce Chhatrapati Sambhajinagar", "Instagram marketplace Aurangabad",
-  "influencer collaboration Chhatrapati Sambhajinagar", "influencer marketing Aurangabad", "micro-influencers Chhatrapati Sambhajinagar",
-  "brand ambassadors Aurangabad", "partnership marketing Chhatrapati Sambhajinagar", "affiliate marketing Aurangabad",
-  "user generated content Chhatrapati Sambhajinagar", "UGC Aurangabad", "customer testimonials Chhatrapati Sambhajinagar",
-  "Instagram takeover Aurangabad", "guest posting Chhatrapati Sambhajinagar", "cross promotion Aurangabad",
-  "collaboration posts Chhatrapati Sambhajinagar", "joint ventures Aurangabad", "co-marketing Chhatrapati Sambhajinagar",
-  "contests Instagram Aurangabad", "giveaways Chhatrapati Sambhajinagar", "sweepstakes Aurangabad",
-  "Instagram contests Chhatrapati Sambhajinagar", "prize giveaways Aurangabad", "viral challenges Chhatrapati Sambhajinagar",
-  "trends Aurangabad", "trending challenges Chhatrapati Sambhajinagar", "meme marketing Aurangabad",
-  "humor marketing Chhatrapati Sambhajinagar", "witty content Aurangabad", "funny captions Chhatrapati Sambhajinagar",
-  "Instagram analytics Aurangabad", "insights Chhatrapati Sambhajinagar", "Instagram metrics Aurangabad",
-  "follower analytics Chhatrapati Sambhajinagar", "content performance Aurangabad", "best time to post Chhatrapati Sambhajinagar",
-  "posting schedule Aurangabad", "Instagram timing Chhatrapati Sambhajinagar", "audience timezone Aurangabad",
-  "audience demographics Chhatrapati Sambhajinagar", "audience insights Aurangabad", "follower analysis Chhatrapati Sambhajinagar",
-  "audience behavior Aurangabad", "audience interests Chhatrapati Sambhajinagar", "follower psychology Aurangabad",
-  "Instagram algorithm Chhatrapati Sambhajinagar", "algorithm optimization Aurangabad", "feed algorithm Chhatrapati Sambhajinagar"
-].slice(0, 1000);
-
-// AI CHATBOT KEYWORDS (500+)
-const chatbotAutomationKeywords = [
-  "chatbot development Aurangabad", "AI bot creation Chhatrapati Sambhajinagar", "WhatsApp bot developer Aurangabad",
-  "ChatGPT bot integration Chhatrapati Sambhajinagar", "AI chatbot Aurangabad", "automation services Chhatrapati Sambhajinagar",
-  "business automation Aurangabad", "customer service bot Chhatrapati Sambhajinagar", "lead generation bot Aurangabad",
-  "conversational AI Chhatrapati Sambhajinagar", "NLP development Aurangabad", "machine learning chatbot Chhatrapati Sambhajinagar",
-  "bot programming Aurangabad", "bot development framework Chhatrapati Sambhajinagar", "chatbot platform Aurangabad",
-  "bot integration Chhatrapati Sambhajinagar", "API bot Aurangabad", "webhook bot Chhatrapati Sambhajinagar",
-  "Telegram bot Aurangabad", "Discord bot Chhatrapati Sambhajinagar", "Slack bot Aurangabad",
-  "Facebook Messenger bot Chhatrapati Sambhajinagar", "WhatsApp Business API Aurangabad", "Twilio integration Chhatrapati Sambhajinagar",
-  "24/7 customer support Aurangabad", "automated support Chhatrapati Sambhajinagar", "instant responses Aurangabad",
-  "customer service automation Chhatrapati Sambhajinagar", "ticket automation Aurangabad", "workflow automation Chhatrapati Sambhajinagar",
-  "process automation Aurangabad", "task automation Chhatrapati Sambhajinagar", "routine automation Aurangabad",
-  "RPA Chhatrapati Sambhajinagar", "intelligent automation Aurangabad", "hyperautomation Chhatrapati Sambhajinagar",
-  "business process automation Aurangabad", "BPA Chhatrapati Sambhajinagar", "enterprise automation Aurangabad",
-  "sales automation Chhatrapati Sambhajinagar", "marketing automation Aurangabad", "lead scoring Chhatrapati Sambhajinagar",
-  "email automation Aurangabad", "SMS automation Chhatrapati Sambhajinagar", "notification automation Aurangabad",
-  "data processing automation Chhatrapati Sambhajinagar", "batch processing Aurangabad", "ETL automation Chhatrapati Sambhajinagar",
-  "database automation Aurangabad", "backup automation Chhatrapati Sambhajinagar", "scheduling automation Aurangabad",
-  "job scheduling Chhatrapati Sambhajinagar", "cron jobs Aurangabad", "task scheduling Chhatrapati Sambhajinagar",
-  "report automation Aurangabad", "analytics automation Chhatrapati Sambhajinagar", "data insights Aurangabad",
-  "AI integration Chhatrapati Sambhajinagar", "machine learning integration Aurangabad", "deep learning Chhatrapati Sambhajinagar",
-  "neural networks Aurangabad", "AI model training Chhatrapati Sambhajinagar", "model deployment Aurangabad",
-  "predictive analytics Chhatrapati Sambhajinagar", "sentiment analysis Aurangabad", "text analysis Chhatrapati Sambhajinagar",
-  "computer vision Aurangabad", "image recognition Chhatrapati Sambhajinagar", "object detection Aurangabad",
-  "voice recognition Chhatrapati Sambhajinagar", "speech to text Aurangabad", "natural language processing Chhatrapati Sambhajinagar",
-  "intent recognition Aurangabad", "entity extraction Chhatrapati Sambhajinagar", "semantic analysis Aurangabad"
-].slice(0, 500);
-
-// LOCATION-SPECIFIC METADATA (500+ each)
-const aurangabadMetadata = {
-  keywords: [
-    "Aurangabad web developer", "Aurangabad website development", "Aurangabad app developer",
-    "Aurangabad Instagram marketing", "Aurangabad digital marketing", "Aurangabad IT company",
-    "Aurangabad tech company", "Aurangabad web agency", "Aurangabad design company",
-    "Aurangabad development services", "Aurangabad digital services", "Aurangabad web services",
-    "web development Aurangabad", "website design Aurangabad", "app development Aurangabad",
-    "digital marketing Aurangabad", "social media marketing Aurangabad", "SEO services Aurangabad",
-    "graphic design Aurangabad", "video marketing Aurangabad", "content marketing Aurangabad",
-    "email marketing Aurangabad", "PPC advertising Aurangabad", "brand development Aurangabad",
-    "website redesign Aurangabad", "website optimization Aurangabad", "e-commerce development Aurangabad",
-    "mobile app Aurangabad", "Android development Aurangabad", "iOS development Aurangabad",
-    "web application Aurangabad", "software development Aurangabad", "custom development Aurangabad",
-    "IT services Aurangabad", "technology solutions Aurangabad", "digital transformation Aurangabad",
-    "business solutions Aurangabad", "enterprise solutions Aurangabad", "startup development Aurangabad"
-  ].concat(Array.from({length: 460}, (_, i) => `Aurangabad service ${i+1}`))
-};
-
-const chhatrapatisambhajingarMetadata = {
-  keywords: [
-    "Chhatrapati Sambhajinagar web developer", "CS Nagar website developer", "Sambhajinagar app developer",
-    "Chhatrapati Sambhajinagar digital marketing", "CS Nagar web design", "Sambhajinagar IT services",
-    "Chhatrapati Sambhajinagar digital agency", "CS Nagar tech company", "Sambhajinagar web company",
-    "Chhatrapati Sambhajinagar development", "CS Nagar services", "Sambhajinagar solutions",
-    "web development Chhatrapati Sambhajinagar", "app development CS Nagar", "digital marketing Sambhajinagar",
-    "website design Chhatrapati Sambhajinagar", "web design CS Nagar", "website development Sambhajinagar",
-    "social media Chhatrapati Sambhajinagar", "Instagram marketing CS Nagar", "Facebook ads Sambhajinagar",
-    "branding Chhatrapati Sambhajinagar", "UI design CS Nagar", "UX design Sambhajinagar",
-    "web hosting Chhatrapati Sambhajinagar", "domain registration CS Nagar", "SSL certificate Sambhajinagar",
-    "technical support Chhatrapati Sambhajinagar", "maintenance services CS Nagar", "support Sambhajinagar",
-    "e-commerce Chhatrapati Sambhajinagar", "online store CS Nagar", "shopping cart Sambhajinagar",
-    "payment gateway Chhatrapati Sambhajinagar", "inventory management CS Nagar", "logistics integration Sambhajinagar",
-    "chatbot Chhatrapati Sambhajinagar", "automation CS Nagar", "AI solutions Sambhajinagar",
-    "machine learning Chhatrapati Sambhajinagar", "data analytics CS Nagar", "cloud services Sambhajinagar"
-  ].concat(Array.from({length: 460}, (_, i) => `Chhatrapati Sambhajinagar keyword ${i+1}`))
-};
-
-// --- FIX GAP 6: DETAILED SERVICE SCHEMAS ---
-const generateSchemas = () => [
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://zaikron.com/#organization",
-    "name": "Zaikron - Web Development & Digital Marketing Company",
-    "url": "https://zaikron.com",
-    "logo": "https://zaikron.com/logo.png",
-    "description": "Leading web development, app development, and Instagram marketing company in Aurangabad & Chhatrapati Sambhajinagar.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Aurangabad",
-      "addressLocality": "Aurangabad",
-      "addressRegion": "Maharashtra",
-      "postalCode": "431001",
-      "addressCountry": "IN"
-    },
-    "areaServed": ["Aurangabad", "Chhatrapati Sambhajinagar", "Maharashtra"],
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Web Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Development" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "App Development" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Marketing" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Automation & Chatbots" } }
-        ],
-      },
-    "sameAs": ["https://facebook.com/zaikron", "https://instagram.com/zaikron", "https://linkedin.com/company/zaikron"]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Zaikron",
-    "url": "https://zaikron.com",
-    "areaServed": ["Aurangabad", "Chhatrapati Sambhajinagar"]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zaikron.com" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://zaikron.com/services" }
-    ]
-  },
-  // --- WEBSITE DEVELOPMENT SERVICE SCHEMA ---
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Website Development",
-    "description": "Custom Next.js & React website development",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Zaikron",
-      "url": "https://zaikron.com"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Aurangabad"},
-      {"@type": "City", "name": "Chhatrapati Sambhajinagar"}
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Website Packages",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "name": "Starter Website",
-          "price": "10000",
-          "priceCurrency": "INR",
-          "availability": "InStock"
-        }
-      ]
-    },
-      "serviceType": "Website Development",
-      "url": "https://zaikron.com/services/web-development",
-      "image": "https://zaikron.com/web-dev-service.jpg",
-      "reviewRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "52"
-      }
-    },
-
-    {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Zaikron Web Development",
-    "areaServed": [
-      { "@type": "City", "name": "Aurangabad" },
-      { "@type": "City", "name": "Chhatrapati Sambhajinagar" },
-      { "@type": "City", "name": "Waluj MIDC" },
-      { "@type": "City", "name": "Cidco" }
-    ],
-    "knowsAbout": "Local Business SEO for Aurangabad",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Local Website Packages",
-      "itemListElement": [
-        { "@type": "Offer", "name": "Aurangabad Small Business Website", "price": "10000" }
-      ]
-    }
-  }
-  ,
-
-  // --- APP DEVELOPMENT SERVICE SCHEMA ---
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "App Development Services",
-    "serviceType": "Mobile App Development",
-    "description": "Native Android & iOS mobile app development services in Aurangabad using React Native and Flutter.",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Zaikron",
-      "url": "https://zaikron.com"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Aurangabad"},
-      {"@type": "City", "name": "Chhatrapati Sambhajinagar"}
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "App Packages",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "name": "MVP App Development",
-          "price": "70000",
-          "priceCurrency": "INR",
-          "availability": "https://schema.org/InStock"
-        }
-      ]
-    },
-    "url": "https://zaikron.com/services/app-development",
-    "reviewRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "85"
-    }
-  },
-  // --- SOCIAL MEDIA MARKETING SCHEMA ---
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "Social Media Marketing Services",
-    "serviceType": "Digital Marketing",
-    "description": "Instagram & Facebook marketing services in Aurangabad. Viral reels, ad campaigns, and brand growth strategies.",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Zaikron",
-      "url": "https://zaikron.com"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Aurangabad"},
-      {"@type": "City", "name": "Chhatrapati Sambhajinagar"}
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Marketing Packages",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "name": "Social Media Starter",
-          "price": "10000",
-          "priceCurrency": "INR",
-          "availability": "https://schema.org/InStock"
-        }
-      ]
-    },
-    "url": "https://zaikron.com/services/social-media-marketing",
-    "reviewRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "ratingCount": "200"
-    }
-  },
-  // --- AI AUTOMATION SCHEMA ---
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "AI Automation & Chatbot Services",
-    "serviceType": "Artificial Intelligence Services",
-    "description": "Custom AI Chatbots, WhatsApp Automation, and ChatGPT integration for businesses in Aurangabad.",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Zaikron",
-      "url": "https://zaikron.com"
-    },
-    "areaServed": [
-      {"@type": "City", "name": "Aurangabad"},
-      {"@type": "City", "name": "Chhatrapati Sambhajinagar"}
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "AI Packages",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "name": "WhatsApp Bot",
-          "price": "30000",
-          "priceCurrency": "INR",
-          "availability": "https://schema.org/InStock"
-        }
-      ]
-    },
-    "url": "https://zaikron.com/services/bot-automation"
-  }
-];
-
-// =======================================================================
-//  NEW SEO IMPLEMENTATION (Server Side)
-// =======================================================================
-
-// 1. Separate Viewport Export (Next.js 14+)
+// Viewport (separate export required by Next.js 14+)
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
 };
 
-// 2. Metadata Export (Uses your existing keyword lists)
+// Homepage Metadata — clean, intent-focused, no keyword spam
 export const metadata: Metadata = {
   title: "Zaikron | Web Development Company Aurangabad | Website, App, Instagram Marketing",
-  description: "Best web development company in Aurangabad & Chhatrapati Sambhajinagar. Websites from ₹10,000, apps ₹70,000+, Instagram marketing. 50+ clients, 300% growth.",
-  authors: [{ name: "Zaikron" }],
-  // Join the lists just like you did in the old <Head>
+  description: "Best web development company in Aurangabad & Chhatrapati Sambhajinagar. Custom websites from ₹15,000, apps from ₹70,000, Instagram marketing & AI chatbots. 50+ local businesses served.",
+  authors: [{ name: "Zaikron Technologies" }],
   keywords: [
-    ...websiteDevelopmentKeywords.slice(0, 200),
-    ...appDevelopmentKeywords.slice(0, 200),
-    ...instagramMarketingKeywords.slice(0, 200),
-    ...chatbotAutomationKeywords.slice(0, 200),
-    ...aurangabadMetadata.keywords.slice(0, 20),
-    ...chhatrapatisambhajingarMetadata.keywords.slice(0, 20),
+    "web development company Aurangabad",
+    "website developer Aurangabad",
+    "app development company Aurangabad",
+    "website developer Chhatrapati Sambhajinagar",
+    "app developer Sambhaji Nagar",
+    "digital marketing Aurangabad",
+    "Instagram marketing Aurangabad",
+    "AI chatbot Aurangabad",
+    "Next.js developer Aurangabad",
+    "mobile app developer Aurangabad",
   ],
   robots: {
     index: true,
@@ -511,56 +41,287 @@ export const metadata: Metadata = {
     canonical: "https://zaikron.com",
     languages: {
       "en-IN": "https://zaikron.com",
-      // Maps to your previous link structure
-      "en": "https://zaikron.com/aurangabad",
+      "x-default": "https://zaikron.com",
     },
   },
   openGraph: {
-    title: "Zaikron | Web Development Company Aurangabad",
-    description: "Web development ₹10,000+ | App development ₹70,000+ | Instagram marketing | 50+ clients",
+    title: "Zaikron | Web Development Company in Aurangabad",
+    description: "Web development ₹15,000+ | App development ₹70,000+ | Instagram marketing | AI chatbots | 50+ clients in Aurangabad",
     url: "https://zaikron.com",
     siteName: "Zaikron",
     type: "website",
     locale: "en_IN",
     images: [
       {
-        url: "/logo/Zaikron.png",
-        width: 800,
-        height: 600,
-        alt: "Zaikron Logo",
+        url: "https://zaikron.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Zaikron - Web Development Company Aurangabad",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Zaikron | Web Development Company Aurangabad",
-    description: "Web development & digital solutions in Aurangabad",
+    description: "Custom websites, apps & digital marketing in Aurangabad. 50+ clients.",
+    images: ["https://zaikron.com/og-image.jpg"],
+    creator: "@zaikron",
   },
   icons: {
     icon: "/logo/Zaikron.png",
     shortcut: "/logo/Zaikron.png",
     apple: "/logo/Zaikron.png",
   },
-  manifest: "/manifest.json", 
+  manifest: "/manifest.json",
   other: {
+    "geo.region": "IN-MH",
+    "geo.placename": "Chhatrapati Sambhajinagar, Aurangabad",
     "geo.position": "19.8762;75.3433",
+    "ICBM": "19.8762, 75.3433",
     "mobile-web-app-capable": "yes",
   }
 };
 
+// Homepage JSON-LD Schemas — aligned with 2026 AI Overview citation requirements
+const generateSchemas = () => [
+  // Core Organization
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://zaikron.com/#organization",
+    "name": "Zaikron Technologies",
+    "url": "https://zaikron.com",
+    "logo": "https://zaikron.com/logo/Zaikron.png",
+    "description": "Leading web development, app development, and Instagram marketing company in Aurangabad & Chhatrapati Sambhajinagar.",
+    "telephone": "+91-9730416763",
+    "email": "hello@zaikron.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Costa Mapal, Peer Bazar Rd, New Usmanpura",
+      "addressLocality": "Chhatrapati Sambhajinagar",
+      "addressRegion": "Maharashtra",
+      "postalCode": "431005",
+      "addressCountry": "IN",
+    },
+    "areaServed": ["Aurangabad", "Chhatrapati Sambhajinagar", "Maharashtra"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Digital Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Development" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "App Development" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Marketing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Automation & Chatbots" } },
+      ],
+    },
+    "sameAs": [
+      "https://www.facebook.com/zaikron",
+      "https://www.instagram.com/zaikronstudio",
+      "https://linkedin.com/company/zaikron",
+      "https://wa.me/919730416763",
+    ],
+  },
+
+  // LocalBusiness
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://zaikron.com/#localbusiness",
+    "name": "Zaikron",
+    "url": "https://zaikron.com",
+    "telephone": "+91-9730416763",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Costa Mapal, Peer Bazar Rd, New Usmanpura",
+      "addressLocality": "Chhatrapati Sambhajinagar",
+      "addressRegion": "Maharashtra",
+      "postalCode": "431005",
+      "addressCountry": "IN",
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 19.8762,
+      "longitude": 75.3433,
+    },
+    "priceRange": "₹15,000 - ₹5,00,000",
+    "areaServed": ["Aurangabad", "Chhatrapati Sambhajinagar"],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "10:00",
+        "closes": "14:00",
+      },
+    ],
+  },
+
+  // Breadcrumbs
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zaikron.com" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://zaikron.com/services" },
+    ],
+  },
+
+  // Service schemas with pricing
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Website Development in Aurangabad",
+    "description": "Custom Next.js & React website development for businesses in Aurangabad and Chhatrapati Sambhajinagar. SEO-optimized, mobile-first, fast-loading.",
+    "provider": { "@type": "LocalBusiness", "name": "Zaikron", "url": "https://zaikron.com" },
+    "areaServed": [
+      { "@type": "City", "name": "Aurangabad" },
+      { "@type": "City", "name": "Chhatrapati Sambhajinagar" },
+    ],
+    "offers": {
+      "@type": "Offer",
+      "name": "Starter Website Package",
+      "price": "15000",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31",
+    },
+    "serviceType": "Website Development",
+    "url": "https://zaikron.com/services/web-development",
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Mobile App Development in Aurangabad",
+    "description": "Native Android and iOS app development for businesses in Aurangabad using Flutter and React Native.",
+    "provider": { "@type": "LocalBusiness", "name": "Zaikron", "url": "https://zaikron.com" },
+    "areaServed": [
+      { "@type": "City", "name": "Aurangabad" },
+      { "@type": "City", "name": "Chhatrapati Sambhajinagar" },
+    ],
+    "offers": {
+      "@type": "Offer",
+      "name": "MVP App Package",
+      "price": "70000",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31",
+    },
+    "serviceType": "Mobile App Development",
+    "url": "https://zaikron.com/services/app-development",
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Social Media Marketing in Aurangabad",
+    "description": "Instagram and Facebook marketing services for businesses in Aurangabad. Viral reels, ad campaigns, and brand growth strategies.",
+    "provider": { "@type": "LocalBusiness", "name": "Zaikron", "url": "https://zaikron.com" },
+    "areaServed": [
+      { "@type": "City", "name": "Aurangabad" },
+      { "@type": "City", "name": "Chhatrapati Sambhajinagar" },
+    ],
+    "offers": {
+      "@type": "Offer",
+      "name": "Social Media Starter Package",
+      "price": "10000",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31",
+    },
+    "serviceType": "Digital Marketing",
+    "url": "https://zaikron.com/services/social-media-marketing",
+  },
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "AI Chatbot Development in Aurangabad",
+    "description": "Custom AI chatbots and WhatsApp automation for businesses in Aurangabad. 24/7 customer support and lead generation.",
+    "provider": { "@type": "LocalBusiness", "name": "Zaikron", "url": "https://zaikron.com" },
+    "areaServed": [
+      { "@type": "City", "name": "Aurangabad" },
+      { "@type": "City", "name": "Chhatrapati Sambhajinagar" },
+    ],
+    "offers": {
+      "@type": "Offer",
+      "name": "WhatsApp Bot Package",
+      "price": "30000",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31",
+    },
+    "serviceType": "AI Automation",
+    "url": "https://zaikron.com/services/bot-automation",
+  },
+
+  // FAQ Schema (feeds AI Overviews — questions match real Google searches)
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is the best website developer in Aurangabad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zaikron is one of the top website development companies in Aurangabad (Chhatrapati Sambhajinagar), offering custom Next.js websites starting from ₹15,000 with built-in Google SEO optimization.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "How much does website development cost in Aurangabad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Website development cost in Aurangabad in 2026 ranges from ₹15,000 for a basic business website to ₹1,50,000+ for custom web applications. Zaikron offers transparent pricing with free consultation.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Which is the best app development company in Sambhaji Nagar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zaikron is a leading mobile app development company in Chhatrapati Sambhajinagar (Aurangabad), building Android and iOS apps using Flutter and React Native starting from ₹70,000.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Does Zaikron provide Instagram marketing services in Aurangabad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Zaikron provides Instagram marketing, Facebook ads, and Google Ads management for businesses in Aurangabad. Services include content creation, viral reels, paid campaigns, and monthly analytics reports.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Does Zaikron make WhatsApp chatbots in Aurangabad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Zaikron develops WhatsApp AI chatbots and business automation for companies in Aurangabad. These bots handle customer inquiries 24/7, qualify leads, and integrate with your sales process.",
+        },
+      },
+    ],
+  },
+];
+
 export default function Home() {
   return (
     <>
-      {/* JSON-LD Schemas Injected here (Server Side) */}
+      {/* JSON-LD Schemas — Server Side for SEO */}
       {generateSchemas().map((schema, i) => (
-        <script 
-          key={i} 
-          type="application/ld+json" 
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} 
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
 
-      {/* RENDER THE CLIENT COMPONENT FOR UI & ANIMATIONS */}
+      {/* Client Component for UI & Animations */}
       <HomeClient />
     </>
   );

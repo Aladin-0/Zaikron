@@ -1,5 +1,7 @@
 'use client';
-import dynamic from 'next/dynamic';
-// Loading the new Monolith
-const GlassMonolith = dynamic(() => import('./GlassMonolith'), { ssr: false });
-export default function LazyParticles() { return <GlassMonolith />; }
+
+// GlassMonolith was removed from this repo.
+// LazyParticles is kept as a safe no-op to prevent build errors.
+export default function LazyParticles() {
+  return null;
+}
